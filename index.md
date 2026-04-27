@@ -28,6 +28,16 @@ title: Wiki Index
 
 - [[ai-knowledge-management]] — ทำไม LLM เหมาะกับ PKM มากกว่า plain chat หรือ RAG
 
+## Health
+
+- [[health/index|สุขภาพ]] — ดัชนีหน้าหลักสุขภาพ
+- [[health/records/index|ประวัติตรวจสุขภาพ]] — ผลตรวจ 2563, 2566, CT Scan 2566
+- [[health/conditions/gastritis|โรคกระเพาะ]] — Erosive Gastritis + H. pylori + ยา 5 รายการ
+
+## Profile
+
+- [[profile/me|โปรไฟล์ส่วนตัว]] — ข้อมูลพื้นฐาน เป้าหมาย preferences ออกกำลังกาย และการนอน
+
 ## Journal
 
 - [[2026-04-27]] — วันที่ initialize vault

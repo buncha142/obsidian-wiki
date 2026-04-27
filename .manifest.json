@@ -1,0 +1,119 @@
+{
+  "_raw/2022-08-16_ส่องกล้องกระเพาะ.pdf": {
+    "ingested_at": "2026-04-27T14:30:00+07:00",
+    "size_bytes": 1562640,
+    "modified_at": "2025-04-24T22:59:00+07:00",
+    "source_type": "data",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/conditions/gastritis.md"]
+  },
+  "_raw/2569-04-20_ยารักาษโรคกระเพาะ_1.jpeg": {
+    "ingested_at": "2026-04-27T15:45:00+07:00",
+    "size_bytes": 215484,
+    "modified_at": "2026-04-27T15:36:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/conditions/gastritis.md"]
+  },
+  "_raw/2569-04-20_ยารักาษโรคกระเพาะ_2.jpeg": {
+    "ingested_at": "2026-04-27T15:45:00+07:00",
+    "size_bytes": 779706,
+    "modified_at": "2026-04-27T15:36:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/conditions/gastritis.md"]
+  },
+  "_raw/2569-04-20_ยารักาษโรคกระเพาะ_3.jpeg": {
+    "ingested_at": "2026-04-27T15:45:00+07:00",
+    "size_bytes": 223694,
+    "modified_at": "2026-04-27T15:36:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/conditions/gastritis.md"]
+  },
+  "_raw/2569-04-20_ยารักาษโรคกระเพาะ_4.jpeg": {
+    "ingested_at": "2026-04-27T15:45:00+07:00",
+    "size_bytes": 192537,
+    "modified_at": "2026-04-27T15:36:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/conditions/gastritis.md"]
+  },
+  "_raw/2569-04-20_ยารักาษโรคกระเพาะ_5.jpeg": {
+    "ingested_at": "2026-04-27T15:45:00+07:00",
+    "size_bytes": 173756,
+    "modified_at": "2026-04-27T15:36:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/conditions/gastritis.md"]
+  },
+  "_raw/2020-10-24_ผลตรวจสุขภาพ_1.jpg": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 1913722,
+    "modified_at": "2020-11-13T00:00:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": ["health/records/2020-10-checkup.md"],
+    "pages_updated": ["health/records/index.md"]
+  },
+  "_raw/2020-10-24_ผลตรวจสุขภาพ_2.jpg": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 2662244,
+    "modified_at": "2020-11-13T00:00:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/records/2020-10-checkup.md"]
+  },
+  "_raw/2020-10-24_ผลตรวจสุขภาพ_3.jpg": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 2462988,
+    "modified_at": "2020-11-13T00:00:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/records/2020-10-checkup.md"]
+  },
+  "_raw/2020-10-24_ผลตรวจสุขภาพ_4.jpg": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 3182771,
+    "modified_at": "2020-11-13T00:00:00+07:00",
+    "source_type": "image",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/records/2020-10-checkup.md"]
+  },
+  "_raw/2023-05-24_ผลตรวจสุขภาพ_1.pdf": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 187753,
+    "modified_at": "2023-06-18T00:00:00+07:00",
+    "source_type": "data",
+    "project": "health",
+    "pages_created": ["health/records/2023-05-checkup.md"],
+    "pages_updated": ["health/records/index.md"]
+  },
+  "_raw/2023-05-24_ผลตรวจสุขภาพ_2.pdf": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 2919306,
+    "modified_at": "2023-06-18T00:00:00+07:00",
+    "source_type": "data",
+    "project": "health",
+    "pages_created": [],
+    "pages_updated": ["health/records/2023-05-checkup.md"]
+  },
+  "_raw/2023-06-04-CT-SCAN.pdf": {
+    "ingested_at": "2026-04-27T16:00:00+07:00",
+    "size_bytes": 1145413,
+    "modified_at": "2023-06-25T00:00:00+07:00",
+    "source_type": "data",
+    "project": "health",
+    "pages_created": ["health/records/2023-06-ct-scan.md"],
+    "pages_updated": ["health/records/index.md"]
+  }
+}
