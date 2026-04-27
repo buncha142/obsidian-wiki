@@ -11,10 +11,14 @@
             "id": "ff90446aec15e126",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "มุมมองกราฟ"
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "แบ็คลิงค์"
+              "title": "แบ็คลิงค์ของ index"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ลิงค์ขาออก"
+              "title": "ลิงค์ขาออกของ index"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "โครงเรื่อง"
+              "title": "โครงเรื่องของ index"
             }
           }
         ]
@@ -178,6 +185,20 @@
   },
   "active": "ff90446aec15e126",
   "lastOpenFiles": [
+    "TUTORIAL.md",
+    "README.md",
+    "GUIDE.md",
+    "concepts/llm-wiki-pattern.md",
+    "index.md",
+    "entities/andrej-karpathy.md",
+    "_raw/rough-note-example.md",
+    "projects/obsidian-wiki-setup.md",
+    "journal/2026-04-27.md",
+    "synthesis/ai-knowledge-management.md",
+    "references/karpathy-gist.md",
+    "skills/wiki-ingest-workflow.md",
+    "entities/obsidian.md",
+    "concepts/delta-tracking.md",
     "obsidian-wiki"
   ]
 }
