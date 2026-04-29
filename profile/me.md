@@ -80,3 +80,4 @@ summary: "ข้อมูลส่วนตัว เป้าหมาย แ�
 - [[health/conditions/gastritis|โรคกระเพาะและยา]]
 - [[health/records/index|ประวัติตรวจสุขภาพ]]
 - [[health/fitness/equipment|อุปกรณ์ออกกำลังกาย]]
+- [[health/sleep|แผนปรับปรุงการนอน]]
