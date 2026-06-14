@@ -18,4 +18,5 @@ summary: "ดัชนีหน้าหลักของข้อมูลส�
 
 ## ดูเพิ่มเติม
 
+- [[health/workflow|Workflow & Prompts]] — คู่มือการใช้งานโฟลเดอร์ health/ พร้อม prompts สำเร็จรูป
 - [[profile/me|โปรไฟล์ส่วนตัว]] — เป้าหมาย preferences และข้อจำกัดส่วนตัว

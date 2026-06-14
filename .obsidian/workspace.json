@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "health/sleep.md",
+                "file": "index.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sleep"
+              "title": "index"
             }
           }
         ]
@@ -182,10 +182,16 @@
   },
   "active": "862c66b6535c59d4",
   "lastOpenFiles": [
-    "health/fitness/workout-plan.md",
-    "health/sleep.md",
-    "health/index.md",
+    "hot.md",
     "TUTORIAL.md",
+    "journal/2025-05-retreat-dhammakaya.md",
+    "journal/2026-04-27.md",
+    "health/workflow.md",
+    "health/sleep.md",
+    "raw/Quickstart.md",
+    "raw",
+    "health/fitness/workout-plan.md",
+    "health/index.md",
     "concepts/delta-tracking.md",
     "concepts/llm-wiki-pattern.md",
     "profile/me.md",
@@ -218,15 +224,9 @@
     "health/records",
     "health/fitness",
     "health/conditions",
-    "health",
     "index.md",
     "README.md",
     "GUIDE.md",
-    "entities/andrej-karpathy.md",
-    "projects/obsidian-wiki-setup.md",
-    "journal/2026-04-27.md",
-    "synthesis/ai-knowledge-management.md",
-    "skills/wiki-ingest-workflow.md",
-    "entities/obsidian.md"
+    "entities/andrej-karpathy.md"
   ]
 }
