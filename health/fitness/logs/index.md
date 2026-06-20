@@ -46,3 +46,4 @@ Template: [[health/fitness/logs/daily-template]]
 - [[health/sleep]]
 - [[health/fitness/workout-plan]]
 - [[health/fitness/equipment]]
+- [[entities/xiaomi-smart-band-9|Xiaomi Smart Band 9]] — อุปกรณ์ที่ใช้บันทึกข้อมูลเหล่านี้

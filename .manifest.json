@@ -116,6 +116,80 @@
     "pages_created": ["health/records/2023-06-ct-scan.md"],
     "pages_updated": ["health/records/index.md"]
   },
+  "_raw/คู่มือ_Claude_ฉบับสมบูรณ์-STAG.pdf": {
+    "ingested_at": "2026-06-14T12:00:00+07:00",
+    "size_bytes": 2655936,
+    "modified_at": "2026-06-14T00:00:00+07:00",
+    "content_hash": "sha256:3ab6f3412367760322383fa0d5284c53e31198d439e7fb605de004ff2777c48d",
+    "source_type": "document",
+    "project": "claude-learning",
+    "ingest_scope": "ครบ 100% — Units 0-7 (7.0-7.23) + Mini Workflows W1-W16 ครบ + Appendix ก 90 prompts ครบ (pages 1-474, 475-494)",
+    "pages_remaining": "none — ingest complete",
+    "pages_created": [
+      "references/claude-complete-guide-2026.md",
+      "entities/anthropic.md",
+      "entities/claude.md",
+      "concepts/constitutional-ai.md",
+      "concepts/claude-models-family.md",
+      "concepts/tokenization.md",
+      "concepts/context-window.md",
+      "concepts/prompt-engineering.md",
+      "references/claude-glossary.md",
+      "references/claude-api-cheatsheet.md",
+      "skills/claude-mini-workflows.md",
+      "concepts/claude-9-features.md",
+      "concepts/claude-products.md",
+      "concepts/claude-custom-skills.md",
+      "concepts/claude-agent-sdk.md",
+      "concepts/claude-safety-pitfalls.md",
+      "references/claude-prompt-cookbook.md"
+    ],
+    "pages_updated": [
+      "index.md",
+      "log.md",
+      "hot.md"
+    ]
+  },
+  "_raw/macmini-m4-2024.md": {
+    "ingested_at": "2026-06-19T22:35:00+07:00",
+    "size_bytes": 1775,
+    "modified_at": "2026-06-19T22:15:58+07:00",
+    "content_hash": "sha256:45836281c62513beee823e57e5527356e605a7246447f178883adb08d8241b96",
+    "source_type": "document",
+    "project": null,
+    "pages_created": ["entities/macmini-m4-2024.md"],
+    "pages_updated": []
+  },
+  "_raw/benq-rd280u-monitor.md": {
+    "ingested_at": "2026-06-19T22:35:00+07:00",
+    "size_bytes": 4962,
+    "modified_at": "2026-06-19T22:16:45+07:00",
+    "content_hash": "sha256:152373bcb58979a357efe0950f6ee0c4906d8edce87a7bd1be35aee956feb8ea",
+    "source_type": "document",
+    "project": null,
+    "pages_created": ["entities/benq-rd280u-monitor.md"],
+    "pages_updated": []
+  },
+  "_raw/benq-screenbar-light.md": {
+    "ingested_at": "2026-06-19T22:35:00+07:00",
+    "size_bytes": 5380,
+    "modified_at": "2026-06-19T22:21:58+07:00",
+    "content_hash": "sha256:50f7586b4bbb4f56cf46b63ca9a0d0008aa7c3f5306946e49f9a56eec629a2c4",
+    "source_type": "document",
+    "project": null,
+    "pages_created": ["entities/benq-screenbar-light.md"],
+    "pages_updated": []
+  },
+  "_raw/zircon-pi-ups-1000va.md": {
+    "ingested_at": "2026-06-19T22:35:00+07:00",
+    "size_bytes": 3826,
+    "modified_at": "2026-06-19T22:11:17+07:00",
+    "content_hash": "sha256:04f1b1ded4fa95d1cbb5dcbdf8eba77ee0fe5be6e93c77cca208ee4927efec8f",
+    "source_type": "document",
+    "project": null,
+    "pages_created": ["entities/zircon-pi-ups-1000va.md"],
+    "pages_updated": ["entities/claude.md"]
+  },
   "_raw/2025-05_retreat_dhammakaya.md": {
     "ingested_at": "2026-06-13T00:00:00+07:00",
     "size_bytes": 18244,
@@ -135,5 +209,195 @@
       "health/conditions/gastritis.md",
       "health/fitness/workout-plan.md"
     ]
+  },
+  "_raw/apple-pencil-pro.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3872,
+    "modified_at": "2026-06-19T23:54:59+07:00",
+    "content_hash": "sha256:d86ec07fea18944a60615ddfefb7343db6f32e6fb6f353fcba6df2a2463b447a",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/apple-pencil-pro.md"],
+    "pages_updated": []
+  },
+  "_raw/ipad-air-11-m2.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3321,
+    "modified_at": "2026-06-19T23:54:41+07:00",
+    "content_hash": "sha256:fbf08d0bd2ad65c8cb110940b4410dff34112431dee04650b25dda467b0c9a89",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/ipad-air-11-m2.md"],
+    "pages_updated": []
+  },
+  "_raw/ugreen-80888-sd-card-reader.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3356,
+    "modified_at": "2026-06-20T00:05:38+07:00",
+    "content_hash": "sha256:1643d71323fafb3fe585e217f9772e6f8cf79caaad684d735db125149855aeaa",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/ugreen-80888-sd-card-reader.md"],
+    "pages_updated": []
+  },
+  "_raw/audio-technica-atr2500x.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3510,
+    "modified_at": "2026-06-20T00:08:47+07:00",
+    "content_hash": "sha256:51a3bf35ef06db3c3699f7f7d3c12a9239e23a58ab0a76db5b0c843ee8448e3c",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/audio-technica-atr2500x.md"],
+    "pages_updated": []
+  },
+  "_raw/logitech-mx-master-3.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3510,
+    "modified_at": "2026-06-20T00:11:04+07:00",
+    "content_hash": "sha256:ed68658c71ae72da310f88cac46a1e957ceb4a716261ccb328c0f55dfdc71411",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/logitech-mx-master-3.md"],
+    "pages_updated": []
+  },
+  "_raw/keychron-k6-hotswap.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3186,
+    "modified_at": "2026-06-20T00:12:09+07:00",
+    "content_hash": "sha256:a787894cab2967e630bb00732251d602d2eb0ba3bedc0cd1bfce764c3653e605",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/keychron-k6-hotswap.md"],
+    "pages_updated": []
+  },
+  "_raw/orico-m2pv-c3-ssd-enclosure.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3448,
+    "modified_at": "2026-06-20T00:14:53+07:00",
+    "content_hash": "sha256:6a00fbbf48d782f9128423b04454e7609b34abbcd5ebf33420ad3c2476aa5aac",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/orico-m2pv-c3-ssd-enclosure.md"],
+    "pages_updated": ["entities/wd-blue-sn550-ssd.md"]
+  },
+  "_raw/wd-blue-sn550-ssd.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 2824,
+    "modified_at": "2026-06-20T00:15:03+07:00",
+    "content_hash": "sha256:f03a1dbe52bb39af7d1d27ff0c357d5e23c9951ab1a54ce54f86525d75d2cf56",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/wd-blue-sn550-ssd.md"],
+    "pages_updated": ["entities/orico-m2pv-c3-ssd-enclosure.md"]
+  },
+  "_raw/iphone-13.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 2893,
+    "modified_at": "2026-06-20T00:29:34+07:00",
+    "content_hash": "sha256:fa2d5f4254f434bc149cd72a091613d72c243bf7879bf48aa98a29373442a34c",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/iphone-13.md"],
+    "pages_updated": ["entities/apple-airpods-4.md"]
+  },
+  "_raw/xiaomi-smart-band-9.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3230,
+    "modified_at": "2026-06-20T00:22:04+07:00",
+    "content_hash": "sha256:047aeb5e88409d66fc790e81514c6b4ff45ed7c0bed21a351d7007a00ad4d8c1",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/xiaomi-smart-band-9.md"],
+    "pages_updated": []
+  },
+  "_raw/bewell-ergonomic-desk.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3245,
+    "modified_at": "2026-06-20T00:26:12+07:00",
+    "content_hash": "sha256:49a787b0ca3fb79f630e42b1e89ce8ee5677b38db1b1f1608d693d8a0d6cd884",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/bewell-ergonomic-desk.md"],
+    "pages_updated": []
+  },
+  "_raw/baseus-rotation-countdown-timer-pro.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3366,
+    "modified_at": "2026-06-20T00:28:16+07:00",
+    "content_hash": "sha256:f5d2bd53f9eef41589cbde20f431d2d576439601f18c9b93c90fe3e90b545d64",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/baseus-rotation-countdown-timer-pro.md"],
+    "pages_updated": []
+  },
+  "_raw/apple-airpods-4.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3474,
+    "modified_at": "2026-06-20T00:29:18+07:00",
+    "content_hash": "sha256:364b236f5b898c854c245a7d1d12d11607a0432394026f721ecec25fc12aa871",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/apple-airpods-4.md"],
+    "pages_updated": ["entities/iphone-13.md"]
+  },
+  "_raw/ajazz-akp03-stream-dock.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3000,
+    "modified_at": "2026-06-19T23:58:50+07:00",
+    "content_hash": "sha256:0f5a165ff7dae4801c27c99d835112394291c8d426cafd9e249586d050b40e39",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/ajazz-akp03-stream-dock.md"],
+    "pages_updated": []
+  },
+  "_raw/boya-cm40-microphone.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3437,
+    "modified_at": "2026-06-19T23:59:28+07:00",
+    "content_hash": "sha256:3d4684d927bb55bf3daeff580a42d96232a468b773c0a0b00d2c513a0c54564e",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/boya-cm40-microphone.md"],
+    "pages_updated": []
+  },
+  "_raw/edifier-mr4-speakers.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3076,
+    "modified_at": "2026-06-19T23:31:09+07:00",
+    "content_hash": "sha256:856c74485dd0c49e08ef7d0449e544ce41edfa16e150f5101c6cbfdb597c062b",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/edifier-mr4-speakers.md"],
+    "pages_updated": []
+  },
+  "_raw/ulanzi-qt03-docking-station.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3926,
+    "modified_at": "2026-06-19T23:58:13+07:00",
+    "content_hash": "sha256:98c49b75ae7b651c277d3117ce71b4e7cc199dc7fb17cd1a95302bb02cfb10b1",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/ulanzi-qt03-docking-station.md"],
+    "pages_updated": ["entities/wd-black-sn7100-ssd.md"]
+  },
+  "_raw/wd-black-sn7100-ssd.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 2839,
+    "modified_at": "2026-06-19T23:57:03+07:00",
+    "content_hash": "sha256:8b8d511e55532163d701d966f6287ba6bd01ba36f32fff66a753bfb7517a8d07",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/wd-black-sn7100-ssd.md"],
+    "pages_updated": ["entities/ulanzi-qt03-docking-station.md"]
+  },
+  "_raw/ajazz-ak820-max-plus-keyboard.md": {
+    "ingested_at": "2026-06-20T00:35:00+07:00",
+    "size_bytes": 3523,
+    "modified_at": "2026-06-20T00:01:27+07:00",
+    "content_hash": "sha256:b23dcf3e0f19c93ebf8c15bfd806fe78bab2ee972d681f3f626c922bdc0db568",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/ajazz-ak820-max-plus-keyboard.md"],
+    "pages_updated": []
   }
 }
