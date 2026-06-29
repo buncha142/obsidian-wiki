@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-06-20 (เพิ่ม IT Equipment 19 ชิ้น: คีย์บอร์ด/เมาส์/ไมค์/ลำโพง/SSD/iPad/iPhone/AirPods/โต๊ะทำงาน ฯลฯ)*
+*This index is automatically maintained. Last updated: 2026-06-21 (เพิ่ม Video Summary Prompt Template)*
 
 ## Concepts
 
@@ -54,6 +54,7 @@ title: Wiki Index
 
 - [[wiki-ingest-workflow]] — ขั้นตอน ingest เอกสารเข้า wiki (3 เส้นทาง)
 - [[skills/claude-mini-workflows|Claude Mini Workflows W1–W13]] — 13 Workflow สำเร็จรูป: eBook, Script YouTube, คลิปสั้น, Online Course, Content Pipeline, SOP, Newsletter, Marketing Campaign, Presentation, Template ขายบน Gumroad/Etsy, MVP Product ใน 1 สัปดาห์, Chatbot สำหรับธุรกิจ
+- [[skills/video-summary-prompt|Video Summary Prompt Template]] — prompt สรุปวิดีโอแบบละเอียด 6 หัวข้อ ใช้ก่อนนำเข้า wiki
 
 ## References
 

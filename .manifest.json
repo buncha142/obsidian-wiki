@@ -399,5 +399,15 @@
     "project": null,
     "pages_created": ["entities/ajazz-ak820-max-plus-keyboard.md"],
     "pages_updated": []
+  },
+  "_raw/promtp.md": {
+    "ingested_at": "2026-06-21T12:50:00+07:00",
+    "size_bytes": 1083,
+    "modified_at": "2026-06-21T12:45:55+07:00",
+    "content_hash": "sha256:b82607cc2dab8158a5f342c99e16e4e57f2a794b806be0120a444850aa361457",
+    "source_type": "document",
+    "project": null,
+    "pages_created": ["skills/video-summary-prompt.md"],
+    "pages_updated": ["concepts/prompt-engineering.md", "skills/wiki-ingest-workflow.md", "index.md"]
   }
 }

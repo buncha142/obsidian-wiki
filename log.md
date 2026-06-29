@@ -32,3 +32,9 @@ title: Wiki Log
 - [2026-06-15] QUERY query="claude project คืออะไร ใช้งานอย่างไร" result_pages=1 mode=normal escalated=false
 - [2026-06-19T22:35:00+07:00] INGEST source="_raw/macmini-m4-2024.md,_raw/benq-rd280u-monitor.md,_raw/benq-screenbar-light.md,_raw/zircon-pi-ups-1000va.md" scope="IT Equipment: Mac mini M4 (2024), BenQ RD280U Programming Monitor, BenQ ScreenBar, ZIRCON Pi UPS 1000VA" pages_created=4 pages_updated=1 mode=raw
 - [2026-06-20T00:35:00+07:00] INGEST source="_raw/*.md (19 files)" scope="IT Equipment batch: Keychron K6/Ajazz AK820/Logitech MX Master 3/Audio-Technica ATR2500X/BOYA CM40/Edifier MR4/Ajazz AKP03/UGREEN 80888/Ulanzi QT03+WD Black SN7100/ORICO M2PV-C3+WD Blue SN550/Baseus Timer Pro/Bewell Desk/iPad Air M2+Apple Pencil Pro/iPhone 13+AirPods 4/Xiaomi Smart Band 9" pages_created=19 pages_updated=0 mode=raw
+- [2026-06-21T12:50:00+07:00] INGEST source="_raw/promtp.md" scope="Video Summary Prompt Template — prompt ภาษาไทยสำหรับสรุปวิดีโอ 6 หัวข้อ" pages_created=1 pages_updated=3 mode=raw
+
+- [2026-06-28] QUERY query="task ออกกำลังกายวันแรก" result_pages=2 mode=normal escalated=false
+2026-06-28T19:58 — manual: created health/fitness/full-body-stretch-25min.md (Mady Morrison 25-min full body stretch, 36 poses) from user-provided YouTube breakdown; linked from workout-plan + stretch-routines
+2026-06-28T21:10 — wiki-ingest-fitness-log: created health/fitness/logs/2026-06-28.md from 6 screenshots (Mi Fitness + Polar)
+2026-06-28T21:45 — wiki-ingest-health-episode: created health/episodes/2026-06-23-fatigue-stress.md from 5 photos + interview (standalone acute event, not gastritis)

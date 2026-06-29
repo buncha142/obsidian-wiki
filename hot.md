@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-06-20
+updated: 2026-06-21
 ---
 
 # Hot Cache
@@ -9,15 +9,15 @@ updated: 2026-06-20
 
 ## Recent Activity
 
+- [2026-06-21] INGEST — `_raw/promtp.md` (raw mode, 1 draft promoted)
+  - **ใหม่:** skills/video-summary-prompt — prompt template ภาษาไทยสรุปวิดีโอ (เช่น YouTube) แบบละเอียด 6 หัวข้อคงที่ (thesis/concepts/examples/steps/quotes/caveats) ใช้เป็นขั้นก่อนหน้าการ ingest เนื้อหาสรุปเข้า wiki
+  - **อัปเดต:** concepts/prompt-engineering และ skills/wiki-ingest-workflow เพิ่ม backlink ไปยังหน้าใหม่
 - [2026-06-20] INGEST — IT Equipment batch ที่โต๊ะทำงาน office "ห้องสติ" (raw mode, 19 drafts promoted)
   - **ใหม่:** entities/bewell-ergonomic-desk (โต๊ะปรับระดับไฟฟ้า), entities/keychron-k6-hotswap + entities/ajazz-ak820-max-plus-keyboard (คีย์บอร์ดหลัก+สำรอง), entities/logitech-mx-master-3 (เมาส์หลัก), entities/audio-technica-atr2500x + entities/boya-cm40-microphone (ไมค์สำรอง+ไมค์ประชุม), entities/edifier-mr4-speakers (ลำโพงมอนิเตอร์), entities/ajazz-akp03-stream-dock (สตรีมเด็ค), entities/ugreen-80888-sd-card-reader (เครื่องอ่านการ์ด), entities/ulanzi-qt03-docking-station + entities/wd-black-sn7100-ssd (docking+SSD คู่กัน), entities/orico-m2pv-c3-ssd-enclosure + entities/wd-blue-sn550-ssd (กล่อง SSD+SSD คู่กัน), entities/baseus-rotation-countdown-timer-pro, entities/ipad-air-11-m2 + entities/apple-pencil-pro (คู่กัน), entities/iphone-13 + entities/apple-airpods-4 (คู่กัน), entities/xiaomi-smart-band-9
   - ทุกหน้ามาจากสกรีนช็อตคำสั่งซื้อ Shopee/Lazada เสริมด้วยสเปกเว็บ `^[inferred]`; เชื่อมโยงกับ entities/macmini-m4-2024 หรือกันเองตามการใช้งานจริง
 - [2026-06-19] INGEST — IT Equipment ที่โต๊ะทำงาน office "ห้องสติ" (raw mode, 4 drafts promoted)
   - **ใหม่:** entities/macmini-m4-2024 (Mac mini M4, 24GB RAM, เครื่องหลัก dev Laravel/TALL Stack), entities/benq-rd280u-monitor (จอ Programming Monitor 28.2" 4K+ 3:2, ฿20,700 จาก Lazada), entities/benq-screenbar-light (โคมไฟ LED แขวนหน้าจอ, ฿4,990 ซื้อพร้อม RD280U), entities/zircon-pi-ups-1000va (UPS 1000VA/700W สำรองไฟให้ Mac mini+จอ, ฿3,910 จาก Shopee)
   - **อัปเดต:** entities/claude เพิ่ม backlink ไปยัง Mac mini ที่ใช้รัน Claude Code ประจำวัน
-- [2026-06-15] INGEST — Appendix ก Prompt Cookbook ครบ 90 prompts (หน้า 441–474)
-  - **อัปเดต:** references/claude-prompt-cookbook — ครบทุกหมวด: ก.1 Business #01-#15, ก.2 Content #16-#30, ก.3 Analysis #31-#45, ก.4 Coding #46-#60, ก.5 Writing #61-#75, ก.6 Productivity #76-#90
-  - **Ingest ครบ 100%:** คู่มือ Claude ฉบับสมบูรณ์-STAG 500 หน้า ทุก Unit + Mini Workflow + Appendix เสร็จแล้ว
 
 ## Key Claude Knowledge Added
 

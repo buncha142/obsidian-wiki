@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "050c084aea704f25",
+        "id": "d29e29e39644f46c",
         "type": "tabs",
         "children": [
           {
-            "id": "a8e0797f6ac8570c",
+            "id": "d9ac6e1bd039a502",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "health/fitness/deep-work-ergonomic-breaks.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "แท็บใหม่"
+              "title": "deep-work-ergonomic-breaks"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 514.5027122497559
+    "width": 289.50271224975586,
+    "collapsed": true
   },
   "right": {
     "id": "bf33e541d3ed7f1a",
@@ -176,53 +181,53 @@
       "bases:สร้างฐานใหม่": false
     }
   },
-  "active": "a8e0797f6ac8570c",
+  "active": "d9ac6e1bd039a502",
   "lastOpenFiles": [
-    "entities/apple-airpods-4.md",
-    "entities/bewell-ergonomic-desk.md",
-    "entities/ulanzi-qt03-docking-station.md",
-    "entities/iphone-13.md",
-    "entities/ugreen-80888-sd-card-reader.md",
-    "entities/wd-blue-sn550-ssd.md",
-    "entities/logitech-mx-master-3.md",
-    "entities/audio-technica-atr2500x.md",
-    "entities/boya-cm40-microphone.md",
-    "entities/ajazz-akp03-stream-dock.md",
-    "entities/baseus-rotation-countdown-timer-pro.md",
-    "entities/keychron-k6-hotswap.md",
-    "entities/ajazz-ak820-max-plus-keyboard.md",
-    "entities/edifier-mr4-speakers.md",
-    "entities/xiaomi-smart-band-9.md",
-    "entities/ipad-air-11-m2.md",
-    "entities/orico-m2pv-c3-ssd-enclosure.md",
-    "entities/wd-black-sn7100-ssd.md",
-    "entities/apple-pencil-pro.md",
-    "_raw/apple-airpods-4.md",
-    "_raw/baseus-rotation-countdown-timer-pro.md",
-    "_raw/bewell-ergonomic-desk.md",
-    "_raw/xiaomi-smart-band-9.md",
-    "_raw/iphone-13.md",
-    "_raw/wd-blue-sn550-ssd.md",
-    "_raw/orico-m2pv-c3-ssd-enclosure.md",
+    "health/episodes/2026-06-23-fatigue-stress.md",
+    "health/fitness/logs/2026-06-28.md",
+    "health/episodes/index.md",
+    "health/episodes",
+    "_raw/8A6182F7-A813-4C0B-A685-A11E900EE7C3.heic",
+    "_raw/E4FDE433-95E6-4E37-B7D8-4723F694B84D.heic",
+    "_raw/CC9574B9-4501-4A52-AC64-C556CC60340E.heic",
+    "_raw/FEE2B3E2-1961-4C76-A29B-273085FBDC38.heic",
+    "_raw/6FC1B9A0-ECCB-45A0-9ECF-F6257ED8BCEF.heic",
+    "health/fitness/deep-work-ergonomic-breaks.md",
+    "health/fitness/full-body-stretch-25min.md",
+    "_raw/72D71AE3-6402-4D45-90F1-5EF941A0FB90_1_201_a.jpeg",
+    "_raw/E4680193-7AAB-4EB9-AC5D-2B89B7BF72BB_1_201_a.jpeg",
+    "_raw/A57DFEF5-538D-42BF-88B5-8451636E2A72_1_201_a.jpeg",
+    "_raw/72627C80-F70B-43EA-AC50-8C4CC949D7F6_1_201_a.jpeg",
+    "_raw/81CD3384-C6DF-477E-AD1D-650F63E96710_1_201_a.jpeg",
+    "_raw/59E59B5F-5968-4495-9FE9-411698BA7ED5_1_201_a.jpeg",
+    "health/fitness/workout-plan.md",
+    "health/daily-routine.md",
+    "health/fitness/stretch-routines.md",
+    "health/fitness/logs/daily-template.md",
+    "health/fitness/logs/weekly-2026-06-16_2026-06-21.md",
+    "health/fitness/logs/2025-06-21.md",
+    "health/fitness/logs/2025-06-20 copy.md",
+    "journal/2026-04-27.md",
+    "skills/video-summary-prompt.md",
+    "_raw/promtp.md",
+    "ยังไม่ได้ตั้งชื่อ.base",
+    "ยังไม่ได้ตั้งชื่อ.md",
+    "journal/2025-05-retreat-dhammakaya.md",
+    "meditation/dhammakaya-technique.md",
+    "profile/me.md",
+    "health/fitness/logs/2025-06-16.md",
+    "health/fitness/logs/2025-06-17.md",
+    "health/fitness/logs/2025-06-18.md",
+    "health/fitness/logs/2025-06-19.md",
+    "health/fitness/logs/2025-06-20.md",
+    "systems/phone-jail.md",
+    "systems/identity-statement.md",
     "raw/livewire/Essentials",
     "raw/livewire",
     "raw",
-    "Users/miniboxmacmini/Obsidian/obsidian-wiki/_raw",
-    "Users/miniboxmacmini/Obsidian/obsidian-wiki",
-    "Users/miniboxmacmini/Obsidian",
-    "Users/miniboxmacmini",
-    "Users",
-    "_raw/คู่มือ_Claude_ฉบับสมบูรณ์-STAG.pdf",
-    "profile",
     "_raw/2569-04-20_ยารักาษโรคกระเพาะ_5.jpeg",
     "_raw/2569-04-20_ยารักาษโรคกระเพาะ_4.jpeg",
     "_raw/2569-04-20_ยารักาษโรคกระเพาะ_3.jpeg",
-    "_raw/2569-04-20_ยารักาษโรคกระเพาะ_2.jpeg",
-    "_raw/2569-04-20_ยารักาษโรคกระเพาะ_1.jpeg",
-    "_raw/81223010-F8D0-4F37-AFD3-EE93336F9FC4_1_201_a.jpeg",
-    "_raw/29AF5095-8B20-4D4A-927C-2756F85DE596_1_105_c.jpeg",
-    "_raw/24B3DB70-5707-4CEF-A062-C44AACE1459F_1_105_c.jpeg",
-    "_raw/861536B2-E84D-482B-B968-DF638C2AD55D_1_105_c.jpeg",
-    "_raw/BA2D7D2F-4AE0-449B-BB18-4A216885DB98_1_105_c.jpeg"
+    "_raw/2569-04-20_ยารักาษโรคกระเพาะ_2.jpeg"
   ]
 }

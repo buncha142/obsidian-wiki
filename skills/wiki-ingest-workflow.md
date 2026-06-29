@@ -69,3 +69,4 @@ AI จะ:
 ## Related
 - [[delta-tracking]] — วิธี track ว่า ingest อะไรไปแล้ว
 - [[llm-wiki-pattern]] — ภาพรวมของ pattern นี้
+- [[skills/video-summary-prompt]] — prompt template สรุปวิดีโอที่ใช้ก่อน ingest เข้าเส้นทาง B

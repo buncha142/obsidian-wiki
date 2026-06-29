@@ -33,6 +33,7 @@ health/fitness/equipment.md ← HR zone, อุปกรณ์
 
 | ไฟล์ | หน้าที่ | แก้ไขเมื่อ |
 |------|---------|------------|
+| [[health/daily-routine]] | Timeline กิจวัตรตื่น→นอน รวมยา+นอน+ออกกำลังกาย | เมื่อปรับเวลา/ยา |
 | [[health/sleep]] | แผนนอน 4 สัปดาห์ + weekly tracking table | รายสัปดาห์ |
 | [[health/fitness/workout-plan]] | ตารางออกกำลังกาย 4 สัปดาห์ | เมื่อปรับแผน |
 | [[health/fitness/equipment]] | HR zones, รายการอุปกรณ์ | ไม่บ่อย |
@@ -199,6 +200,7 @@ Wind-down เมื่อคืน: [ทำครบ / ขาด: ...]
 
 ## Related
 
+- [[health/daily-routine]]
 - [[health/sleep]]
 - [[health/fitness/workout-plan]]
 - [[health/fitness/logs/daily-template]]

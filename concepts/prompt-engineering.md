@@ -214,3 +214,4 @@ E — Evaluate  : วัดผลกับ benchmark
 - [[concepts/constitutional-ai]]
 - [[concepts/claude-models-family]]
 - [[references/claude-api-cheatsheet]]
+- [[skills/video-summary-prompt]] — ตัวอย่าง prompt template สรุปวิดีโอที่ใช้ anatomy นี้จริง
