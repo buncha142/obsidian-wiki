@@ -38,3 +38,5 @@ title: Wiki Log
 2026-06-28T19:58 — manual: created health/fitness/full-body-stretch-25min.md (Mady Morrison 25-min full body stretch, 36 poses) from user-provided YouTube breakdown; linked from workout-plan + stretch-routines
 2026-06-28T21:10 — wiki-ingest-fitness-log: created health/fitness/logs/2026-06-28.md from 6 screenshots (Mi Fitness + Polar)
 2026-06-28T21:45 — wiki-ingest-health-episode: created health/episodes/2026-06-23-fatigue-stress.md from 5 photos + interview (standalone acute event, not gastritis)
+- [2026-06-29 16:56] QUERY query="วันนี้ฉันออกกำลังกายอย่างไร?" result_pages=2 mode=normal escalated=false
+- [2026-06-29T20:40:00] INGEST source="_raw/30min-full-body-dumbbell-workout.md, _raw/15min-full-body-stretch-data.md, _raw/*.jpeg (band+polar)" pages_updated=1 pages_created=3 mode=raw

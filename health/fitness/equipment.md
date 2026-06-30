@@ -3,8 +3,8 @@ title: "อุปกรณ์ออกกำลังกาย"
 tags: [สุขภาพ, ออกกำลังกาย, อุปกรณ์]
 category: health-fitness
 created: 2026-04-27
-updated: 2026-04-27
-summary: "รายการอุปกรณ์ออกกำลังกายที่มีทั้งหมด — ลู่วิ่ง ดัมเบล 5กก. เสื่อโยคะ โฟมโรล ลูกบอล Massage Gun POLAR H7"
+updated: 2026-06-29
+summary: "รายการอุปกรณ์ออกกำลังกายที่มีทั้งหมด — ลู่วิ่ง ดัมเบล 5กก. เสื่อโยคะ โฟมโรล ลูกบอลนวด TriggerPoint MB5 Massage Gun POLAR H7"
 ---
 
 # อุปกรณ์ออกกำลังกาย
@@ -25,7 +25,7 @@ summary: "รายการอุปกรณ์ออกกำลังกา�
 | ดัมเบล 5 กก. | น้ำหนัก/แรงต้าน | แขน ไหล่ หลัง | น้ำหนักเหมาะสำหรับ endurance rep |
 | เสื่อโยคะ | Bodyweight / ยืดเหยียด | ทุกส่วน | ใช้ floor work ทั้งหมด |
 | โฟมโรล (Foam Roller) | Recovery | fascia / กล้ามเนื้อทั่วตัว | ใช้ก่อน/หลังออกกำลังกาย |
-| ลูกบอลออกกำลังกาย (Exercise Ball) | Core / Balance | core, หลัง, สะโพก | เสริม stability และ core workout |
+| ลูกบอลนวดกล้ามเนื้อ TriggerPoint MB5 (Massage Ball) | Recovery / Myofascial release | glutes, สะโพก, ไหล่ (จุดลึกเข้าถึงยาก) | **ลูกบอลนวด ไม่ใช่บอลโยคะ** — เส้นผ่านศูนย์กลาง 5 นิ้ว (12.7 ซม.), 5.8 oz, ผิวโฟม จำลองแรงกดจากข้อศอกหมอนวด คลายจุด trigger point เพิ่ม range of motion (ใช้คู่/แทนโฟมโรลในจุดเล็ก) |
 | Massage Gun AMAXS AM328 | Recovery | กล้ามเนื้อจุดเฉพาะ | ใช้หลัง session สำหรับจุดที่ตึง |
 | POLAR H7 Heart Rate Sensor | Monitoring | — | ติดตาม HR สำหรับ Zone 2 training |
 
