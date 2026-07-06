@@ -179,6 +179,40 @@ guidance. Derive it from *this* day's data + the plan — don't invent generic a
    night (≥6h, good score, no gaps), the bedtime/gap boxes may be omitted and the forecast can simply
    confirm readiness.
 
+## Step 4c — Reconcile yesterday's review checklist against today's data
+
+The `🔮 พรุ่งนี้` block you wrote *yesterday* contains a `**สิ่งที่ต้องทำ (ทบทวน):**` checklist of
+`- [ ]` items aimed at **today**. Now that today's log exists, today's real numbers are the evidence for
+whether each of those items happened. Go back and tick/annotate them so the checklist becomes a closed
+feedback loop instead of a forgotten to-do list.
+
+Do this **after** the new log page is fully written (you need today's final values), and **only** when a
+previous-day log actually exists and contains a `**สิ่งที่ต้องทำ (ทบทวน):**` section. If the new page is a
+*merge* into an already-existing date (not a genuinely new day), skip this step — the prior day was already
+reconciled.
+
+1. **Find the previous log.** The previous day = the most recent existing
+   `health/fitness/logs/YYYY-MM-DD.md` dated *before* the page you just wrote (usually log date − 1, but
+   use the latest one that exists if a day was skipped). Read it and locate its
+   `**สิ่งที่ต้องทำ (ทบทวน):**` checklist.
+2. **Judge each item against today's data.** For every `- [ ]` line, decide from *today's* log values
+   whether it was achieved, and rewrite the box + append a short Thai result tag (keep the original text):
+   - `- [x] … → ✅ **ทำได้** <ค่าจริงที่พิสูจน์>` when met (cite the number, e.g. "เข้านอน 22:27 → 6h3m").
+   - `- [ ] … → ❌ **ยังไม่ทำ** <เหตุผล>` when missed (e.g. ภาพ band ยังถ่าย ~19:38 ไม่ใช่ปิดวัน).
+   - `- [~] … → ◐ **ครึ่งเดียว** <ส่วนที่ได้ / ส่วนที่ขาด>` when partially met (e.g. HR ขณะนอนเก็บได้ แต่ SpO2 ยังขาด).
+   - `- [ ] … → ⬜ ไม่มีบันทึก` when today's data can't evidence it either way (e.g. a morning
+     overtraining self-check that isn't captured by band data) — note it neutrally, don't fake a result.
+   Map common items: bedtime lever → compare เข้านอน/นอนรวม vs target; intensity guard (Zone 2 /
+   don't-max-out) → compare HR เฉลี่ย + Zone หลัก; data-quality fixes (band photo at close, SpO2,
+   HR ขณะนอน) → check whether today's log filled that gap.
+3. **Bump `updated`** on the previous-day page to today's date (you edited it).
+4. **Carry-over:** any item that came out `❌` or `◐` is still open — confirm today's own
+   `🔮 พรุ่งนี้` checklist (Step 4b) already re-lists it; if it's genuinely still relevant and you
+   omitted it, add it so nothing silently drops.
+
+Keep edits surgical — change only the checkbox lines and the `updated` field; never rewrite the previous
+day's forecast prose or its measured tables.
+
 ## Step 5 — Wire it in and clean up
 
 1. Add a row for the new page in the `health/fitness/logs/index.md` log table (match its existing format).
@@ -195,7 +229,8 @@ guidance. Derive it from *this* day's data + the plan — don't invent generic a
 ## Step 6 — Report
 
 Summarize tersely (Thai): which date(s) you wrote, the headline numbers (นอนรวม, ก้าว, แคล, workout),
-which targets were met/missed, and the files created/updated.
+which targets were met/missed, and the files created/updated. If you reconciled the previous day's
+checklist (Step 4c), report the verdict per item (✅ / ❌ / ◐ / ⬜) and flag any carry-over still open.
 
 ## Worked example (from real screenshots, 2026-06-28)
 

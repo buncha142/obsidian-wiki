@@ -40,3 +40,6 @@ title: Wiki Log
 2026-06-28T21:45 — wiki-ingest-health-episode: created health/episodes/2026-06-23-fatigue-stress.md from 5 photos + interview (standalone acute event, not gastritis)
 - [2026-06-29 16:56] QUERY query="วันนี้ฉันออกกำลังกายอย่างไร?" result_pages=2 mode=normal escalated=false
 - [2026-06-29T20:40:00] INGEST source="_raw/30min-full-body-dumbbell-workout.md, _raw/15min-full-body-stretch-data.md, _raw/*.jpeg (band+polar)" pages_updated=1 pages_created=3 mode=raw
+2026-06-30T20:50 — wiki-ingest-fitness-log: created health/fitness/logs/2026-06-30.md from 4 screenshots + promoted _raw/MadFit_20Min_Lower_Body_Stretch.md → health/fitness/20min-lower-body-stretch.md
+2026-06-30T21:09 — wiki-ingest-fitness-log: updated health/fitness/logs/2026-06-30.md with 2 Polar sessions (Running 34:31 Zone 2 + Stretching 15:28)
+2026-07-01T22:30 — wiki-ingest-fitness-log: created health/fitness/logs/2026-07-01.md from 6 screenshots + promoted 30min-no-equipment-strength-workout.md; reconciled 2026-06-30 checklist

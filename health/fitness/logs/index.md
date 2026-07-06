@@ -3,7 +3,7 @@ title: "บันทึกสุขภาพประจำวัน — ดั�
 tags: [สุขภาพ, fitness, sleep, xiaomi-band-9]
 category: health-fitness
 created: 2026-06-13
-updated: 2026-06-29
+updated: 2026-07-05
 summary: "ดัชนีบันทึกสุขภาพประจำวัน จาก Xiaomi Band 9 — ก้าว, นอน, HR, แคล"
 ---
 
@@ -37,6 +37,11 @@ Template: [[health/fitness/logs/daily-template]]
 |-----|------|--------|---------|--------|-----|-------|
 | 28 มิ.ย. | 10,570 | 5h3m | 1h58m | 58 | 601 | [[health/fitness/logs/2026-06-28]] |
 | 29 มิ.ย. | 7,508 | 5h31m | 2h10m | - | 476 | [[health/fitness/logs/2026-06-29]] |
+| 30 มิ.ย. | 7,755 | 6h3m | 1h50m | 57 | 444 | [[health/fitness/logs/2026-06-30]] |
+| 1 ก.ค. | 5,156 | 5h18m | 1h47m | 56 | 356 | [[health/fitness/logs/2026-07-01]] |
+| 2-5 ก.ค. | 🧳 เดินทางประชุมต่างจังหวัด — ไม่มีข้อมูล | - | - | - | - | - |
+
+สรุปสัปดาห์: [[health/fitness/logs/weekly-2026-06-28_2026-07-05]]
 
 ### พฤษภาคม 2568
 
