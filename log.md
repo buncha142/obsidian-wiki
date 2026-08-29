@@ -43,3 +43,6 @@ title: Wiki Log
 2026-06-30T20:50 — wiki-ingest-fitness-log: created health/fitness/logs/2026-06-30.md from 4 screenshots + promoted _raw/MadFit_20Min_Lower_Body_Stretch.md → health/fitness/20min-lower-body-stretch.md
 2026-06-30T21:09 — wiki-ingest-fitness-log: updated health/fitness/logs/2026-06-30.md with 2 Polar sessions (Running 34:31 Zone 2 + Stretching 15:28)
 2026-07-01T22:30 — wiki-ingest-fitness-log: created health/fitness/logs/2026-07-01.md from 6 screenshots + promoted 30min-no-equipment-strength-workout.md; reconciled 2026-06-30 checklist
+2026-07-11T20:56 — wiki-ingest: created entities/synology-ds920plus-nas.md from _raw/IMG_0357.jpeg (Synology DS920+ NAS label photo); updated entities/zircon-pi-ups-1000va.md (added NAS to protected devices) + index.md; mode=raw
+2026-07-12T08:15 — wiki-ingest: created entities/tplink-tl-sg1024d-switch.md from _raw/IMG_0358.jpeg (TP-Link TL-SG1024D 24-Port Gigabit Switch front panel photo); updated entities/synology-ds920plus-nas.md (noted switch is unmanaged, no LACP support) + index.md; mode=raw
+- [2026-07-15] QUERY query="วัดในเขตการปกครองอำเภอบางแก้ว แยกตามเขตการปกครองตำบล" result_pages=0 mode=normal escalated=true note="wiki ไม่มีข้อมูล — พบคำตอบจริงใน PARA project (02_Areas/เลขาเจ้าคณะอำเภอบางแก้ว/) แทน"

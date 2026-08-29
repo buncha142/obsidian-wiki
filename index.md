@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-06-21 (เพิ่ม Video Summary Prompt Template)*
+*This index is automatically maintained. Last updated: 2026-07-12 (เพิ่ม TP-Link TL-SG1024D Switch)*
 
 ## Concepts
 
@@ -49,6 +49,8 @@ title: Wiki Index
 - [[entities/iphone-13|iPhone 13]] — สมาร์ทโฟนพกติดตัว
 - [[entities/apple-airpods-4|Apple AirPods 4]] — หูฟังไร้สายคู่กับ iPhone 13
 - [[entities/xiaomi-smart-band-9|Xiaomi Smart Band 9]] — สายรัดข้อมืออัจฉริยะพกติดตัว
+- [[entities/synology-ds920plus-nas|Synology DS920+ NAS]] — NAS 4-bay ที่โต๊ะทำงานห้องสติ สำรองไฟด้วย ZIRCON Pi UPS
+- [[entities/tplink-tl-sg1024d-switch|TP-Link TL-SG1024D Switch]] — สวิตช์เครือข่าย 24-Port Gigabit แบบ unmanaged ไม่รองรับ LACP
 
 ## Skills
 

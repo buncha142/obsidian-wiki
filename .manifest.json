@@ -409,5 +409,25 @@
     "project": null,
     "pages_created": ["skills/video-summary-prompt.md"],
     "pages_updated": ["concepts/prompt-engineering.md", "skills/wiki-ingest-workflow.md", "index.md"]
+  },
+  "_raw/IMG_0357.jpeg": {
+    "ingested_at": "2026-07-11T00:00:00+07:00",
+    "size_bytes": 704056,
+    "modified_at": "2026-07-11T20:55:59+07:00",
+    "content_hash": "sha256:73911c55332a5edc117b1caed7b1d238e152e056898553c8fc8b59b04c6daa2e",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/synology-ds920plus-nas.md"],
+    "pages_updated": ["entities/zircon-pi-ups-1000va.md", "index.md"]
+  },
+  "_raw/IMG_0358.jpeg": {
+    "ingested_at": "2026-07-12T00:00:00+07:00",
+    "size_bytes": 2262099,
+    "modified_at": "2026-07-12T08:08:48+07:00",
+    "content_hash": "sha256:cb53a4db3ba11f71ed906fdd4d5d5b7a2255a90100b80b416713e0a2b1b33c19",
+    "source_type": "image",
+    "project": null,
+    "pages_created": ["entities/tplink-tl-sg1024d-switch.md"],
+    "pages_updated": ["entities/synology-ds920plus-nas.md", "index.md"]
   }
 }

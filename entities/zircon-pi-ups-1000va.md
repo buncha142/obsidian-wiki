@@ -3,9 +3,13 @@ title: "ZIRCON Pi 1000VA/700W Line Interactive UPS"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-06-19
-sources: [shopee-zircon-official-store]
-summary: "เครื่องสำรองไฟ Line Interactive UPS แบบ Pure Sine Wave ขนาด 1000VA/700W สำรองไฟให้ Mac mini M4 และจอ BenQ RD280U ที่โต๊ะทำงาน office ห้องสติ"
+updated: 2026-07-11
+sources: [shopee-zircon-official-store, img-0357-label-photo]
+summary: "เครื่องสำรองไฟ Line Interactive UPS แบบ Pure Sine Wave ขนาด 1000VA/700W สำรองไฟให้ Mac mini M4, จอ BenQ RD280U และ Synology DS920+ NAS ที่โต๊ะทำงาน office ห้องสติ"
+provenance:
+  extracted: 0.85
+  inferred: 0.15
+  ambiguous: 0.0
 ---
 
 # ZIRCON Pi 1000VA/700W Line Interactive UPS
@@ -40,12 +44,12 @@ summary: "เครื่องสำรองไฟ Line Interactive UPS แบ
   - การรับประกัน: 2 ปี (ยกเว้นชิ้นส่วนภายนอกเช่นเคสและสายไฟ)
 
 ## การใช้งานจริง
-- **ใช้ทำอะไรเป็นหลัก:** สำรองไฟให้ [[entities/macmini-m4-2024|Mac mini M4]] และจอมอนิเตอร์ [[entities/benq-rd280u-monitor|BenQ RD280U]] เพื่อป้องกันไฟตก/ไฟดับ/ไฟกระชาก
-- **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** [[entities/macmini-m4-2024|Mac mini M4]], [[entities/benq-rd280u-monitor|BenQ RD280U]], Software Monitoring ผ่าน USB Port สำหรับสั่งปิดโปรแกรมอัตโนมัติก่อนเครื่องดับ (Auto Shutdown)
+- **ใช้ทำอะไรเป็นหลัก:** สำรองไฟให้ [[entities/macmini-m4-2024|Mac mini M4]], จอมอนิเตอร์ [[entities/benq-rd280u-monitor|BenQ RD280U]] และ [[entities/synology-ds920plus-nas|Synology DS920+ NAS]] เพื่อป้องกันไฟตก/ไฟดับ/ไฟกระชาก ^[extracted]
+- **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** [[entities/macmini-m4-2024|Mac mini M4]], [[entities/benq-rd280u-monitor|BenQ RD280U]], [[entities/synology-ds920plus-nas|Synology DS920+ NAS]], Software Monitoring ผ่าน USB Port สำหรับสั่งปิดโปรแกรมอัตโนมัติก่อนเครื่องดับ (Auto Shutdown)
 - **ตั้งอยู่ที่ไหน:** โต๊ะทำงาน office "ห้องสติ"
 
 ## ปัญหา/ข้อจำกัดที่เจอ
-- (ยังไม่มีข้อมูล — เพิ่งซื้อเมื่อ 2026-06-14)
+- (ยังไม่มีข้อมูล)
 
 ## แผนในอนาคต
 - (ยังไม่ระบุ)
@@ -53,3 +57,4 @@ summary: "เครื่องสำรองไฟ Line Interactive UPS แบ
 ## Related
 - [[entities/macmini-m4-2024]]
 - [[entities/benq-rd280u-monitor]]
+- [[entities/synology-ds920plus-nas]]
