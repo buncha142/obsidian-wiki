@@ -97,6 +97,9 @@ title: Wiki Index
 
 - [[systems/phone-jail|Phone Jail]] — วางโทรศัพท์ห่างเตียง 3 เมตรหลัง 20:00 แทน willpower
 - [[systems/identity-statement|Identity Statement]] — "ฉันเดินทางมาไกลเกินกว่าจะถอยหลังแล้ว"
+- [[systems/daily-shutdown|Daily Shutdown]] — SOP ปิดวันงาน 30 นาที (18:30–19:00) เคลียร์ Single Inbox + ตั้ง Big 3 พรุ่งนี้
+- [[systems/weekly-review|Weekly Review]] — SOP วางแผนสัปดาห์ศุกร์ 14:00–15:00 + Big 3 ล่วงหน้า 7 วัน
+- [[systems/interrupt-shield|Interrupt Shield]] — กฎป้องกันการขัดจังหวะช่วง Deep Work 14:00–17:00
 
 ## Projects
 
