@@ -3,7 +3,7 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-09-04
+updated: 2026-09-09
 sources: [user-provided]
 summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) และผลตรวจสมรรถภาพเครื่อง"
 ---
@@ -30,7 +30,7 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 
 ## การใช้งานจริง
 - **ใช้ทำอะไรเป็นหลัก:** dev โปรเจค Laravel/TALL Stack (admin.ptmc072), งานธุรการ/เอกสาร, ประชุมออนไลน์และสื่อสาร
-- **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** VS Code + [[entities/claude|Claude]] Code, Google Workspace (Docs/Sheets/Drive), โปรแกรมบัญชี/เอกสารราชการ; สำรองไฟด้วย [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]]
+- **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** VS Code + [[entities/claude|Claude]] Code, Google Workspace (Docs/Sheets/Drive), โปรแกรมบัญชี/เอกสารราชการ; สำรองไฟด้วย [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]]; พิมพ์/สแกนผ่าน [[entities/brother-dcp-t430w-printer|Brother DCP-T430W]] ด้วย AirPrint (ไม่ลง driver ของผู้ผลิต)
 - **ตั้งอยู่ที่ไหน:** โต๊ะทำงาน office "ห้องสติ"
 
 ## ปัญหา/ข้อจำกัดที่เจอ
@@ -77,4 +77,5 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - [[entities/benq-rd280u-monitor]]
 - [[entities/benq-screenbar-light]]
 - [[entities/zircon-pi-ups-1000va]]
+- [[entities/brother-dcp-t430w-printer]]
 - [[entities/claude]]
