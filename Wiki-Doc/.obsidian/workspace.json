@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "a75246b3e6a1f7b7",
+    "id": "eae84d71c7948f6c",
     "type": "split",
     "children": [
       {
-        "id": "4e1492e2913cf8a6",
+        "id": "b9d1192b5847f9fb",
         "type": "tabs",
         "children": [
           {
-            "id": "e0b81c539cf509a2",
+            "id": "46aaa6c0fe1fdd80",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1d342876c1bea0eb",
+    "id": "0642cc38ff610b32",
     "type": "split",
     "children": [
       {
-        "id": "0bae38e068e6e8fa",
+        "id": "a06a9a46ffd48b73",
         "type": "tabs",
         "children": [
           {
-            "id": "654ca7c0f4a4340c",
+            "id": "5f77398fd1e4a568",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -46,7 +46,7 @@
             }
           },
           {
-            "id": "e219e18188fb59ca",
+            "id": "5ba112049fd8dcc5",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -63,11 +63,14 @@
             }
           },
           {
-            "id": "d39bd1dcedca8fa8",
+            "id": "f8b4caeadabf53a6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "บุ๊กมาร์ก"
             }
@@ -76,18 +79,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "bf33e541d3ed7f1a",
+    "id": "d2f86ccf106d1e8a",
     "type": "split",
     "children": [
       {
-        "id": "32e66b65ae23dfb2",
+        "id": "b49926e6fe9e067e",
         "type": "tabs",
         "children": [
           {
-            "id": "1c16c6e44eec4b24",
+            "id": "1155a873c9f812b8",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -105,7 +108,7 @@
             }
           },
           {
-            "id": "34a70c701276a450",
+            "id": "efed7f195c77d3b1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -118,7 +121,7 @@
             }
           },
           {
-            "id": "9263449920b85a02",
+            "id": "07178a753e7412b4",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,7 +136,7 @@
             }
           },
           {
-            "id": "3383fd2efcbd6d8c",
+            "id": "e34d51435837c3e6",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -147,7 +150,7 @@
             }
           },
           {
-            "id": "87ff1cc1fd44d4fa",
+            "id": "8760b41674fa81f7",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -178,53 +181,9 @@
       "bases:สร้างฐานใหม่": false
     }
   },
-  "active": "654ca7c0f4a4340c",
+  "active": "46aaa6c0fe1fdd80",
   "lastOpenFiles": [
-    "health/fitness/logs/2026-06-30.md",
-    "_raw/be-date-picker-pattern-2026-07-06.md",
-    "health/fitness/logs/weekly-2026-06-28_2026-07-05.md",
-    "health/fitness/logs/weekly-2026-06-29_2026-07-05.md",
-    "health/fitness/logs/2026-07-01.md",
-    "health/fitness/30min-no-equipment-strength-workout.md",
-    "_raw/0EC3E5DB-67DD-4CB5-AD49-8458AC2B8481_1_201_a.jpeg",
-    "_raw/FA5A146B-9DF8-4031-87AB-6878DF9DFF71_1_201_a.jpeg",
-    "_raw/C2ADEA92-8337-4105-B3C4-F692277D80FD_1_201_a.jpeg",
-    "_raw/E8A2F605-B6FE-4702-84D7-6360B734937F_1_201_a.jpeg",
-    "_raw/B8C29F6C-85C0-45F5-B033-272DBC1EBEE8_1_201_a.jpeg",
-    "_raw/C3EFAF52-54F7-4430-85B1-3FC4A27685D3_1_201_a.jpeg",
-    "_raw/15Min_DailyStretch_Relaxation.md",
-    "_raw/30_Min_No_Equipment_Strength_Workout.md",
-    "health/fitness/deep-work-ergonomic-breaks.md",
-    "_raw/F29966BE-9085-4FFD-9687-C1949CD5E8E6_1_201_a.jpeg",
-    "_raw/A72F4BC8-3276-49DC-BC8F-F46D0BC74FFE_1_201_a.jpeg",
-    "health/fitness/20min-lower-body-stretch.md",
-    "_raw/E283A458-5A05-48DC-8023-F6B89A55B729_1_201_a.jpeg",
-    "_raw/ABFC2F6D-16AA-441C-A262-5CFADB3C002C_1_105_c.jpeg",
-    "_raw/MadFit_20Min_Lower_Body_Stretch.md",
-    "health/fitness/15min-full-body-stretch.md",
-    "health/fitness/30min-full-body-dumbbell-workout.md",
-    "health/fitness/logs/2026-06-29.md",
-    "_raw/30min-full-body-dumbbell-workout.md",
-    "_raw/15min-full-body-stretch-data.md",
-    "health/episodes/2026-06-23-fatigue-stress.md",
-    "health/fitness/logs/2026-06-28.md",
-    "health/episodes/index.md",
-    "health/episodes",
-    "_raw/8A6182F7-A813-4C0B-A685-A11E900EE7C3.heic",
-    "_raw/E4FDE433-95E6-4E37-B7D8-4723F694B84D.heic",
-    "_raw/CC9574B9-4501-4A52-AC64-C556CC60340E.heic",
-    "_raw/FEE2B3E2-1961-4C76-A29B-273085FBDC38.heic",
-    "_raw/6FC1B9A0-ECCB-45A0-9ECF-F6257ED8BCEF.heic",
-    "health/fitness/full-body-stretch-25min.md",
-    "health/fitness/workout-plan.md",
-    "health/daily-routine.md",
-    "health/fitness/stretch-routines.md",
-    "health/fitness/logs/daily-template.md",
-    "health/fitness/logs/weekly-2026-06-16_2026-06-21.md",
-    "health/fitness/logs/2025-06-21.md",
     "ยังไม่ได้ตั้งชื่อ.base",
-    "raw/livewire/Essentials",
-    "raw/livewire",
-    "raw"
+    "ยินดีต้อนรับ.md"
   ]
 }

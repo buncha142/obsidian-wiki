@@ -3,7 +3,7 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-09-09
+updated: 2026-09-15
 sources: [user-provided]
 summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) และผลตรวจสมรรถภาพเครื่อง"
 ---
@@ -44,13 +44,20 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
   - `homebrew.mxcl.nginx.plist`, `homebrew.mxcl.php@8.3.plist`, `homebrew.mxcl.php@8.4.plist`, `homebrew.mxcl.dnsmasq.plist` — เศษเหลือจากตอนใช้ `brew services` ปัจจุบัน **Laravel Herd** (`de.beyondco.herd.helper`) จัดการ nginx/php/dnsmasq เองแล้ว
   - `jp.co.canon.MasterInstaller.plist` — ไม่ได้ต่อเครื่องพิมพ์ Canon แล้ว
 
-### รายการที่ยังเปิดอัตโนมัติอยู่ (สถานะหลังทำความสะอาด)
+### รายการที่ยังเปิดอัตโนมัติอยู่ (ตรวจล่าสุด 2026-09-15)
 | ระดับ | รายการ |
 |---|---|
-| Login Items | Google Drive, GeminiAppLauncher, FigmaAgent, Stream Dock AJAZZ |
+| Login Items | Google Drive, **Herd** |
 | User LaunchAgents | Google Updater (keystone ×3), MySQL, PostgreSQL@16 (Homebrew) |
 | System LaunchAgents | Google keystone, Logitech Options+/RightSight, OneDrive updater, Microsoft AutoUpdate/SyncReporter, Zoom updater |
 | System LaunchDaemons | Docker (socket/vmnetd), Google Updater, Logitech updater, OneDrive/Microsoft/Office helpers, **Laravel Herd helper**, **NetBird VPN**, Zoom daemon |
+
+> เปลี่ยนแปลงจากครั้งก่อน (2026-09-04): Login Items มี **Herd** และ **Microsoft 365 Copilot** เพิ่มเข้ามา ส่วนระดับอื่นไม่เปลี่ยน
+
+### ลดรายการ Login Items (2026-09-15)
+- ลบออกจาก Login Items ผ่าน System Events: **Microsoft 365 Copilot**, **GeminiAppLauncher**, **FigmaAgent**, **Stream Dock AJAZZ** — ต้องเปิดเองเมื่อจะใช้งาน (Stream Dock ต้องเปิดแอปก่อน ปุ่มถึงจะทำงาน)
+- เก็บไว้: **Google Drive** (ใช้ sync เอกสาร) และ **Herd** (ใช้ dev Laravel)
+- ถ้าแอปใดกลับมาเปิดอัตโนมัติอีก ให้ปิดตัวเลือก "Launch at login" ในหน้าตั้งค่าของแอปนั้น
 
 > หมายเหตุ: MySQL + PostgreSQL@16 รันพื้นหลังตลอด ถ้าไม่ได้ dev ทุกวันสามารถหยุดด้วย `brew services stop mysql` / `brew services stop postgresql@16` แล้วสั่ง start เมื่อต้องใช้
 
@@ -79,3 +86,4 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - [[entities/zircon-pi-ups-1000va]]
 - [[entities/brother-dcp-t430w-printer]]
 - [[entities/claude]]
+- [[entities/microsoft-365-family]]

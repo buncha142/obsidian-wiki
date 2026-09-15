@@ -1,0 +1,75 @@
+filters:
+  and:
+    - file.inFolder("entities")
+formulas:
+  group: if(file.hasTag("it-equipment"), "อุปกรณ์ IT", if(file.hasTag("person"), "บุคคล", if(file.hasTag("company"), "บริษัท", "ซอฟต์แวร์และบริการ")))
+properties:
+  file.name:
+    displayName: หน้า
+  formula.group:
+    displayName: หมวด
+  summary:
+    displayName: สรุป
+  tags:
+    displayName: Tags
+  updated:
+    displayName: อัปเดตล่าสุด
+views:
+  - type: table
+    name: ทั้งหมด (แยกหมวด)
+    groupBy:
+      property: formula.group
+      direction: ASC
+    order:
+      - file.name
+      - summary
+      - updated
+    sort:
+      - property: updated
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.summary: 970
+  - type: table
+    name: อุปกรณ์ IT
+    filters:
+      and:
+        - file.hasTag("it-equipment")
+    order:
+      - file.name
+      - summary
+      - tags
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+  - type: table
+    name: ซอฟต์แวร์และบริการ
+    filters:
+      or:
+        - file.hasTag("software")
+        - file.hasTag("subscription")
+        - file.hasTag("tool")
+        - file.hasTag("assistant")
+    order:
+      - file.name
+      - summary
+      - tags
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+  - type: table
+    name: บริษัทและบุคคล
+    filters:
+      or:
+        - file.hasTag("company")
+        - file.hasTag("person")
+    order:
+      - file.name
+      - summary
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
