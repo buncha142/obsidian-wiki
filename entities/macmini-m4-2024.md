@@ -3,7 +3,7 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-09-15
+updated: 2026-09-17
 sources: [user-provided]
 summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) และผลตรวจสมรรถภาพเครื่อง"
 ---
@@ -34,7 +34,7 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - **ตั้งอยู่ที่ไหน:** โต๊ะทำงาน office "ห้องสติ"
 
 ## ปัญหา/ข้อจำกัดที่เจอ
-- (ยังไม่มีข้อมูล)
+- **2026-09-17 — Microsoft Defender ทำเครื่องช้า:** หลังติดตั้ง Microsoft Defender (พบว่าลงเมื่อ 2026-09-15) ตรวจพบว่า `wdavdaemon_unprivileged` (real-time protection) กิน CPU 20–112% ต่อเนื่อง และ RAM ว่างลดจาก 87% เหลือ ~245 MB จาก 24 GB — สาเหตุหลักของอาการเครื่องช้าที่รู้สึกได้ **แก้แล้ว: ถอดถอน Defender ออกทั้งหมด** (ดูหัวข้อ "ถอดถอน Microsoft Defender" ด้านล่าง)
 
 ## การตั้งค่าระบบที่ทำไว้
 
@@ -60,6 +60,11 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - ถ้าแอปใดกลับมาเปิดอัตโนมัติอีก ให้ปิดตัวเลือก "Launch at login" ในหน้าตั้งค่าของแอปนั้น
 
 > หมายเหตุ: MySQL + PostgreSQL@16 รันพื้นหลังตลอด ถ้าไม่ได้ dev ทุกวันสามารถหยุดด้วย `brew services stop mysql` / `brew services stop postgresql@16` แล้วสั่ง start เมื่อต้องใช้
+
+### ถอดถอน Microsoft Defender (2026-09-17)
+- **สาเหตุ:** ติดตั้งเมื่อ 2026-09-15 แบบ manual (ไม่ได้ผ่าน MDM/enrollment ใดๆ — ตรวจแล้วว่า `profiles status -type enrollment` = No) เป็นชุด Defender for Endpoint เต็มรูปแบบ (รวม DLP component) ทำให้ real-time protection (`wdavdaemon_unprivileged`) กิน CPU 20–112% ต่อเนื่องและ RAM แทบเต็ม
+- **วิธีถอด:** `sudo rm -rf "/Applications/Microsoft Defender.app"` → ไป trigger LaunchDaemon `com.microsoft.fresno.uninstall` ที่เฝ้า path นี้อยู่ ให้รัน official uninstall script อัตโนมัติ (ถอด daemon, DLP, auth rules, user data, settings directory ครบ — ดู log ที่ `/Library/Logs/Microsoft/mdatp/uninstall.log`)
+- **ข้อควรระวัง:** system extension (`com.microsoft.wdav.epsext`) ไม่หลุดอัตโนมัติเพราะตอน script รันถึงขั้นตอนถอด extension ตัวแอปถูกลบไปก่อนแล้ว ต้องเคลียร์เพิ่มด้วย `sudo systemextensionsctl uninstall UBF8T346G9 com.microsoft.wdav.epsext` และ/หรือปิดผ่าน System Settings → General → Login Items & Extensions → Endpoint Security Extensions แล้ว restart เครื่อง
 
 ## ผลตรวจสมรรถภาพ (2026-09-04)
 
