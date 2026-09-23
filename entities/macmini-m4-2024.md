@@ -3,9 +3,9 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-09-17
+updated: 2026-09-23
 sources: [user-provided]
-summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) และผลตรวจสมรรถภาพเครื่อง"
+summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง และการตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio"
 ---
 
 # Mac mini M4 (2024)
@@ -65,6 +65,29 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - **สาเหตุ:** ติดตั้งเมื่อ 2026-09-15 แบบ manual (ไม่ได้ผ่าน MDM/enrollment ใดๆ — ตรวจแล้วว่า `profiles status -type enrollment` = No) เป็นชุด Defender for Endpoint เต็มรูปแบบ (รวม DLP component) ทำให้ real-time protection (`wdavdaemon_unprivileged`) กิน CPU 20–112% ต่อเนื่องและ RAM แทบเต็ม
 - **วิธีถอด:** `sudo rm -rf "/Applications/Microsoft Defender.app"` → ไป trigger LaunchDaemon `com.microsoft.fresno.uninstall` ที่เฝ้า path นี้อยู่ ให้รัน official uninstall script อัตโนมัติ (ถอด daemon, DLP, auth rules, user data, settings directory ครบ — ดู log ที่ `/Library/Logs/Microsoft/mdatp/uninstall.log`)
 - **ข้อควรระวัง:** system extension (`com.microsoft.wdav.epsext`) ไม่หลุดอัตโนมัติเพราะตอน script รันถึงขั้นตอนถอด extension ตัวแอปถูกลบไปก่อนแล้ว ต้องเคลียร์เพิ่มด้วย `sudo systemextensionsctl uninstall UBF8T346G9 com.microsoft.wdav.epsext` และ/หรือปิดผ่าน System Settings → General → Login Items & Extensions → Endpoint Security Extensions แล้ว restart เครื่อง
+
+### ตั้งค่าอัดหน้าจอพร้อมเสียง — OBS Studio (2026-09-23)
+
+- **ปัญหาเดิม:** เครื่องมือ built-in `⌘ + Shift + 5` อัดได้แค่ภาพหน้าจอ + เสียงไมค์ แต่**ไม่ได้เสียงระบบ** (system audio จาก YouTube/Zoom/วิดีโอในเครื่อง)
+- **วิธีแก้:** ติดตั้ง **OBS Studio 32.2.2** ผ่าน `brew install --cask obs` — ตั้งแต่ macOS 13 เป็นต้นมา OBS ดึงเสียงระบบได้ตรงผ่าน **ScreenCaptureKit** จึง**ไม่ต้องลง BlackHole/Loopback** เป็น virtual audio driver อีกต่อไป
+
+**การตั้งค่าที่ใช้ (ทำครั้งเดียว):**
+
+| ส่วน | ค่าที่ตั้ง | ได้อะไร |
+|---|---|---|
+| Sources → `macOS Screen Capture` | เลือกจอ + ติ๊ก **Capture Audio** | ภาพหน้าจอ + **เสียงระบบ** |
+| Sources → `Audio Input Capture` | เลือก **BOYA CM40** (ไมค์ USB) | เสียงพูดบรรยาย |
+| Settings → Output → Recording Format | **MP4** | ไฟล์เปิดได้ทุกที่ |
+| Settings → Output → Encoder | **Apple VT H264 Hardware** | ใช้ hardware encoder ของ M4 ไม่กิน CPU |
+
+**ข้อควรระวัง:**
+- รันครั้งแรกต้องอนุญาต Screen Recording + Microphone ที่ System Settings → Privacy & Security แล้ว **ปิด-เปิด OBS ใหม่** สิทธิ์ถึงจะมีผล
+- อัดพร้อมเสียงระบบ **ต้องใส่หูฟัง** ไม่งั้นไมค์จะจับเสียงลำโพงซ้ำเป็น echo
+- จอ [[entities/benq-rd280u-monitor|BenQ RD280U]] ความละเอียด 3840 × 2560 อัด 4K กินพื้นที่ ~1–2 GB ต่อนาที — ควรอัดเฉพาะบางส่วนของจอ หรือย้ายไฟล์ออกหลังอัดเสร็จ
+
+**ทางเลือกสำรอง (ไม่ต้องเปิด OBS):**
+- งานสั้นที่ไม่ต้องใช้เสียงระบบ → `⌘ + Shift + 5` → Options → Microphone: BOYA CM40
+- รีบมากและไม่เน้นคุณภาพ → Zoom (New Meeting คนเดียว → Share Screen → ติ๊ก **Share Sound** → Record)
 
 ## ผลตรวจสมรรถภาพ (2026-09-04)
 
