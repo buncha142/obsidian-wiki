@@ -52,6 +52,7 @@ title: Wiki Index
 - [[entities/synology-ds920plus-nas|Synology DS920+ NAS]] — NAS 4-bay ที่โต๊ะทำงานห้องสติ สำรองไฟด้วย ZIRCON Pi UPS
 - [[entities/tplink-tl-sg1024d-switch|TP-Link TL-SG1024D Switch]] — สวิตช์เครือข่าย 24-Port Gigabit แบบ unmanaged ไม่รองรับ LACP
 - [[entities/brother-dcp-t430w-printer|Brother DCP-T430W]] — เครื่องพิมพ์อิงค์แท็งก์ 3-in-1 Wi-Fi 5GHz ใช้ AirPrint กับ Mac mini M4
+- [[entities/sony-mdr-h600a-headphones|Sony MDR-H600A]] — หูฟังครอบหูมีสาย h.ear on 2 ที่โต๊ะทำงานห้องสติ
 
 ## Skills
 
