@@ -3,7 +3,7 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-09-23
+updated: 2026-09-25
 sources: [user-provided]
 summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง และการตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio"
 ---
@@ -104,6 +104,45 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 
 - **กิน CPU สูงสุด:** VS Code Renderer (6.4%), [[entities/claude|Claude]] Code extension (5.8%), WindowServer (4.9%)
 - **กิน RAM สูงสุด:** VS Code, Google Chrome, LINE, Stream Dock AJAZZ — ไม่มีตัวใดเกิน 2% ต่อ process
+
+## ผลตรวจสมรรถภาพ (2026-09-25)
+
+ตรวจตอน uptime 2 วัน 14 ชม. — **โดยรวมดี แต่เจอ Defender extension ค้างรันอยู่**
+
+| ด้าน | ค่าที่วัดได้ | ประเมิน |
+|---|---|---|
+| CPU | load avg 1.61 / 1.54 / 1.57 (10 cores) | ว่าง |
+| Thermal | ไม่มี thermal/performance warning | ปกติ |
+| RAM | free 78%, swap 0 MB (pageouts 71,061) | เพียงพอ |
+| Storage | Data volume ใช้ 173 GB เหลือ 266 GB (40%); `~/Library/Caches` 9 GB | ดี |
+| SSD health | SMART **Verified** | ปกติ |
+| Processes | 893 | ปกติสำหรับเครื่อง dev |
+
+- **ปัญหาที่พบ:** system extension `com.microsoft.wdav.epsext` (Microsoft Defender Endpoint Security Extension) ยังสถานะ `[activated enabled]` และรันตลอด (PID 541 ตั้งแต่ boot) กิน CPU เฉลี่ยสูงสุดในเครื่อง ~25% — การถอด Defender เมื่อ 2026-09-17 **ยังไม่ครบ** ตามที่เตือนไว้ในหัวข้อ "ข้อควรระวัง" ด้านบน; plist `com.microsoft.fresno.uninstall` ก็ยังค้างใน `/Library/LaunchDaemons/`
+- **กิน RAM สูงสุด:** LINE (~1.1 GB), VS Code (หลาย process รวมหลาย GB), Google Chrome, Microsoft Word
+
+### แอปที่ไม่ได้ใช้/ไม่จำเป็น (ประเมิน 2026-09-25)
+| แอป | ขนาด | ใช้ล่าสุด | หมายเหตุ |
+|---|---|---|---|
+| iMovie | 3.7 GB | ไม่เคย | ลบได้ ติดตั้งใหม่จาก App Store ได้ |
+| GarageBand | 1.1 GB | ไม่เคย | ลบได้ |
+| Keynote | 543 MB | ไม่เคย | ใช้ PowerPoint แทน |
+| Display Pilot 2 | 804 MB | 2025-12-21 | ซอฟต์แวร์ BenQ — เก็บไว้ถ้ายังปรับจอ RD280U ผ่านแอป |
+| Microsoft Outlook / OneNote / Excel | 2.6 / 1.3 / 2.5 GB | ไม่เคย | ใช้ Gmail/Google Sheets อยู่ — Excel ควรเก็บไว้เปิดไฟล์ราชการ |
+| Microsoft Teams | 1.1 GB | 2026-09-08 | เก็บถ้ายังมีประชุม Teams |
+| Microsoft 365 Copilot + Copilot | 1.0 GB + 151 MB | 2026-09-15/18 | ซ้ำกันสองตัว |
+| OneDrive | 1.2 GB | ไม่เคย | มี LaunchAgent/Daemon updater 3 ตัวรันพื้นหลัง |
+| Gemini (+ Google Gemini ใน ~/Applications) | 352 MB | ไม่เคย | ซ้ำกันสองตัว |
+| Docker | 2.4 GB | 2026-08-31 | Herd ครอบคลุม dev Laravel แล้ว มี daemon 2 ตัว |
+| uTorrent Web | 37 MB | 2026-09-04 | ความเสี่ยงด้านความปลอดภัย |
+| Figma, Toggl Track, NetBird, FreeFileSync/RealTimeSync, Mi Fitness | — | 2026-01 ถึง 06 | ไม่ได้ใช้หลายเดือน — พิจารณาตามความจำเป็น |
+| brew: `postgresql@17`, `nut` | — | — | ติดตั้งค้างแต่ไม่ได้รัน (ใช้ postgresql@16) |
+
+### ผลการล้างเครื่อง (2026-09-25)
+- รัน `~/mac-cleanup.sh --run` แล้ว: ลบแอป 17 ตัวตามตารางด้านบน (ยกเว้น Display Pilot 2, Excel, Teams, Microsoft 365 Copilot) + launchd plist ของ OneDrive/Docker/NetBird + `com.microsoft.fresno.uninstall` + brew `postgresql@17`, `nut`
+- **Defender extension ยังถอดไม่ได้:** `systemextensionsctl uninstall` ใช้ไม่ได้เมื่อเปิด SIP ("this tool cannot be used if System Integrity Protection is enabled") หลัง restart `epsext` ยัง `[activated enabled]` และใช้ CPU ~25%
+- **แก้แล้ว (2026-09-25):** ผู้ใช้ปิด extension ด้วยตนเอง (SIP ยังเปิดอยู่) → สถานะเปลี่ยนเป็น `[terminated waiting to uninstall on reboot]` process `epsext` หยุดแล้ว ไม่มีไฟล์ Defender/launchd ค้าง — restart อีกครั้งเพื่อให้ถอดออกจากรายการถาวร
+- **หลังล้าง:** RAM ว่าง 88%, swap 0, Data volume ใช้ 157 GB เหลือ 282 GB (ได้คืน ~16 GB), ไม่มี process ใดกิน CPU เกิน 4%
 
 ## แผนในอนาคต
 - (ยังไม่ระบุ)
