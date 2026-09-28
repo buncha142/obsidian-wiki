@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b9d1192b5847f9fb",
+        "id": "edb08cf1a0427422",
         "type": "tabs",
         "children": [
           {
-            "id": "46aaa6c0fe1fdd80",
+            "id": "3096acd9f92efd10",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -181,7 +181,7 @@
       "bases:สร้างฐานใหม่": false
     }
   },
-  "active": "46aaa6c0fe1fdd80",
+  "active": "5f77398fd1e4a568",
   "lastOpenFiles": [
     "ยังไม่ได้ตั้งชื่อ.base",
     "ยินดีต้อนรับ.md"
