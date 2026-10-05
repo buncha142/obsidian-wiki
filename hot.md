@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-07-12
+updated: 2026-10-03
 ---
 
 # Hot Cache
@@ -9,18 +9,15 @@ updated: 2026-07-12
 
 ## Recent Activity
 
+- [2026-10-03] INGEST — `_raw/be-date-picker-pattern-2026-07-06.md` (raw mode, 1 draft promoted)
+  - **ใหม่:** skills/html-date-picker-pattern — pattern เพิ่ม native calendar picker ให้ text field ที่เก็บวันที่ พ.ศ. ใน html-data-editor tools (hidden Gregorian `<input type=date>` + แปลง ±543 ปี) โดยไม่เปลี่ยน storage format; projects/takbat-phatthalung-2569 — project overview ย่อ ระบุว่าใช้ `coordination-log.html` เป็นที่มาของ pattern นี้
+  - **อัปเดต:** index.md เพิ่มลิงก์ทั้งสองหน้า
 - [2026-07-12] INGEST — `_raw/IMG_0358.jpeg` (raw mode, 1 draft promoted)
   - **ใหม่:** entities/tplink-tl-sg1024d-switch — TP-Link TL-SG1024D 24-Port Gigabit Switch, unmanaged, ไม่รองรับ LACP
   - **อัปเดต:** entities/synology-ds920plus-nas เพิ่มหมายเหตุว่าสวิตช์ที่ใช้ไม่รองรับ Link Aggregation
 - [2026-07-11] INGEST — `_raw/IMG_0357.jpeg` (raw mode, 1 draft promoted)
   - **ใหม่:** entities/synology-ds920plus-nas — Synology DS920+ 4-bay NAS ติดตั้งที่โต๊ะทำงาน office ห้องสติ อ่านจากรูปฉลากเครื่อง (S/N, MAC, DC Input)
   - **อัปเดต:** entities/zircon-pi-ups-1000va เพิ่ม NAS เข้าไปในรายการอุปกรณ์ที่สำรองไฟด้วย UPS
-- [2026-06-21] INGEST — `_raw/promtp.md` (raw mode, 1 draft promoted)
-  - **ใหม่:** skills/video-summary-prompt — prompt template ภาษาไทยสรุปวิดีโอ (เช่น YouTube) แบบละเอียด 6 หัวข้อคงที่ (thesis/concepts/examples/steps/quotes/caveats) ใช้เป็นขั้นก่อนหน้าการ ingest เนื้อหาสรุปเข้า wiki
-  - **อัปเดต:** concepts/prompt-engineering และ skills/wiki-ingest-workflow เพิ่ม backlink ไปยังหน้าใหม่
-- [2026-06-20] INGEST — IT Equipment batch ที่โต๊ะทำงาน office "ห้องสติ" (raw mode, 19 drafts promoted)
-  - **ใหม่:** entities/bewell-ergonomic-desk (โต๊ะปรับระดับไฟฟ้า), entities/keychron-k6-hotswap + entities/ajazz-ak820-max-plus-keyboard (คีย์บอร์ดหลัก+สำรอง), entities/logitech-mx-master-3 (เมาส์หลัก), entities/audio-technica-atr2500x + entities/boya-cm40-microphone (ไมค์สำรอง+ไมค์ประชุม), entities/edifier-mr4-speakers (ลำโพงมอนิเตอร์), entities/ajazz-akp03-stream-dock (สตรีมเด็ค), entities/ugreen-80888-sd-card-reader (เครื่องอ่านการ์ด), entities/ulanzi-qt03-docking-station + entities/wd-black-sn7100-ssd (docking+SSD คู่กัน), entities/orico-m2pv-c3-ssd-enclosure + entities/wd-blue-sn550-ssd (กล่อง SSD+SSD คู่กัน), entities/baseus-rotation-countdown-timer-pro, entities/ipad-air-11-m2 + entities/apple-pencil-pro (คู่กัน), entities/iphone-13 + entities/apple-airpods-4 (คู่กัน), entities/xiaomi-smart-band-9
-  - ทุกหน้ามาจากสกรีนช็อตคำสั่งซื้อ Shopee/Lazada เสริมด้วยสเปกเว็บ `^[inferred]`; เชื่อมโยงกับ entities/macmini-m4-2024 หรือกันเองตามการใช้งานจริง
 
 ## Key Claude Knowledge Added
 

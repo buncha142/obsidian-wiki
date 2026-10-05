@@ -429,5 +429,18 @@
     "project": null,
     "pages_created": ["entities/tplink-tl-sg1024d-switch.md"],
     "pages_updated": ["entities/synology-ds920plus-nas.md", "index.md"]
+  },
+  "_raw/be-date-picker-pattern-2026-07-06.md": {
+    "ingested_at": "2026-10-03T00:00:00+07:00",
+    "size_bytes": 1261,
+    "modified_at": "2026-08-30T22:06:25+07:00",
+    "content_hash": "sha256:84ef3d1dcfb735ceb6fbbcbcacf3a5d8c428b0e829d15f88c542d6657595d4d5",
+    "source_type": "document",
+    "project": "takbat-phatthalung-2569",
+    "pages_created": [
+      "skills/html-date-picker-pattern.md",
+      "projects/takbat-phatthalung-2569/takbat-phatthalung-2569.md"
+    ],
+    "pages_updated": ["index.md"]
   }
 }

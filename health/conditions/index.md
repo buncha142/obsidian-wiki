@@ -11,7 +11,7 @@ summary: "รายการโรคประจำตัวและยาท�
 
 ## โรคที่กำลังรักษา
 
-- [[health/conditions/gastritis|โรคกระเพาะอาหาร (Gastritis)]] — กำลังรักษา
+- [[health/conditions/gastritis|โรคกระเพาะอาหาร (Gastritis)]] — กำเริบ 2 ต.ค. 2569 กำลังทานยา 8 รายการ
 
 ## หมายเหตุ
 

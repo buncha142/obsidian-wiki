@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-07-12 (เพิ่ม TP-Link TL-SG1024D Switch)*
+*This index is automatically maintained. Last updated: 2026-10-03 (เพิ่ม Buddhist-Era Date Picker Pattern + ตักบาตรพัทลุง 2569)*
 
 ## Concepts
 
@@ -59,6 +59,7 @@ title: Wiki Index
 - [[wiki-ingest-workflow]] — ขั้นตอน ingest เอกสารเข้า wiki (3 เส้นทาง)
 - [[skills/claude-mini-workflows|Claude Mini Workflows W1–W13]] — 13 Workflow สำเร็จรูป: eBook, Script YouTube, คลิปสั้น, Online Course, Content Pipeline, SOP, Newsletter, Marketing Campaign, Presentation, Template ขายบน Gumroad/Etsy, MVP Product ใน 1 สัปดาห์, Chatbot สำหรับธุรกิจ
 - [[skills/video-summary-prompt|Video Summary Prompt Template]] — prompt สรุปวิดีโอแบบละเอียด 6 หัวข้อ ใช้ก่อนนำเข้า wiki
+- [[skills/html-date-picker-pattern|Buddhist-Era (พ.ศ.) Date Picker Pattern]] — เพิ่ม calendar picker ให้ text field พ.ศ. ใน html-data-editor tools โดยไม่เปลี่ยน storage format
 
 ## References
 
@@ -106,6 +107,7 @@ title: Wiki Index
 ## Projects
 
 - [[obsidian-wiki-setup]] — Decision log การ setup vault นี้
+- [[projects/takbat-phatthalung-2569/takbat-phatthalung-2569|ตักบาตรพัทลุง 2569]] — โปรเจกต์ใช้เครื่องมือ html-data-editor เก็บวันที่ พ.ศ. เป็น text
 
 ---
 

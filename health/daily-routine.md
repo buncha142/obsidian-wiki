@@ -4,7 +4,7 @@ tags: [สุขภาพ, กิจวัตร, productivity, routine, ปฏ�
 category: health
 status: ใช้งานได้
 created: 2026-06-21
-updated: 2026-09-01
+updated: 2026-10-03
 sources: [sleep-plan-2026, workout-plan-2026, personal-retreat-notes, time-management-system-2026]
 summary: "Timeline กิจวัตรประจำวันตั้งแต่ตื่น 04:30 ถึงเข้านอน 21:00 — รวมทำวัตร/ปฏิบัติธรรม งานองค์กร ออกกำลังกาย deep work และบล็อกเรียนบาลี ประโยค ๑-๒ เข้าด้วยกันเป็นตารางเดียว"
 ---
@@ -15,7 +15,12 @@ summary: "Timeline กิจวัตรประจำวันตั้งแ�
 
 > **หลักการเดียวที่สำคัญที่สุด:** ตื่นเวลาเดิมทุกวัน (04:30) ไม่มีข้อยกเว้น — ส่วนที่เหลือทั้งหมดต่อเนื่องจากจุดนี้ ดู [[health/sleep|circadian rhythm]]
 
-> **หมายเหตุยา:** ยาที่เคยทานประจำสำหรับ [[health/conditions/gastritis|โรคกระเพาะ]] (Omeprazole, Rebamipide, Synpro-15, Neurobion, Deanxit) **ทานครบหมดแล้วตามที่แพทย์สั่ง และไม่ได้ทานต่อ** ณ ปัจจุบันไม่มียาประจำในกิจวัตรนี้ (ดูสถานะล่าสุดที่ [[health/conditions/gastritis]])
+> **หมายเหตุยา (อัปเดต 3 ต.ค. 2569):** [[health/conditions/gastritis|โรคกระเพาะ]]กำเริบ — รับยารอบใหม่ 2 ต.ค. 2569 จำนวน 8 รายการ:
+> - **ก่อนอาหาร 1 ชม.:** Omeprazole (เช้า-เย็น), Synpro-15 2 แคปซูล (เช้า)
+> - **พร้อม/หลังอาหาร:** DHEA (เช้า, พร้อมอาหาร), Vitamin C (เช้า, หลังอาหารทันที), Rebamipide + Neurobion (เช้า-กลางวัน-เย็น)
+> - **ก่อนนอน:** Deanxit + Melatonin — อาจทำให้ง่วง
+>
+> รายละเอียดและวันที่ยาหมดดูที่ [[health/conditions/gastritis]]
 
 ---
 
@@ -160,7 +165,7 @@ Shutdown ต้องอยู่**ก่อน**ทำวัตรเย็น 
 
 > ⚠️ **เกณฑ์ถอย**: ถ้าภายใน 15 ก.ย. 69 พบว่า sleep latency ยาวขึ้น หรือ deep sleep ลดลงจาก baseline → ย้ายบล็อกเรียนบาลี ๔๕ นาที ไป **11:00–11:30 + 13:00–13:15** แล้วคืน wind-down เต็ม ๖๐ นาที
 
-> Deanxit ทานครบตามที่แพทย์สั่งแล้วและหยุดทาน — ปัจจุบันไม่มียาช่วยนอนในกิจวัตรนี้
+> ตั้งแต่ 2 ต.ค. 2569: ทาน **Deanxit + Melatonin 10 mg ก่อนนอน** ตามที่แพทย์สั่ง (ห้ามหยุด Deanxit เอง)
 
 ---
 
@@ -197,7 +202,7 @@ Shutdown ต้องอยู่**ก่อน**ทำวัตรเย็น 
 - [[health/sleep]] — รายละเอียดแผนนอน 4 สัปดาห์
 - [[health/fitness/workout-plan]] — รายละเอียดออกกำลังกายแต่ละวัน
 - [[health/fitness/stretch-routines]] — ท่ายืดเหยียดตื่นนอน/ก่อนนอน
-- [[health/conditions/gastritis]] — ประวัติยาและสถานะปัจจุบัน (หยุดยาแล้ว)
+- [[health/conditions/gastritis]] — ประวัติยาและสถานะปัจจุบัน (กำลังทานยารอบ 2 ต.ค. 2569)
 - [[health/workflow]] — วิธีบันทึก log รายวัน/รายสัปดาห์
 - [[profile/me]] — เป้าหมายและข้อจำกัดส่วนตัว
 - [[journal/2025-05-retreat-dhammakaya]] — ที่มาของ insight เรื่อง environment ปลอดมือถือ
