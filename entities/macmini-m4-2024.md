@@ -3,7 +3,7 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-09-25
+updated: 2026-10-05
 sources: [user-provided]
 summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง และการตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio"
 ---
@@ -143,6 +143,37 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - **Defender extension ยังถอดไม่ได้:** `systemextensionsctl uninstall` ใช้ไม่ได้เมื่อเปิด SIP ("this tool cannot be used if System Integrity Protection is enabled") หลัง restart `epsext` ยัง `[activated enabled]` และใช้ CPU ~25%
 - **แก้แล้ว (2026-09-25):** ผู้ใช้ปิด extension ด้วยตนเอง (SIP ยังเปิดอยู่) → สถานะเปลี่ยนเป็น `[terminated waiting to uninstall on reboot]` process `epsext` หยุดแล้ว ไม่มีไฟล์ Defender/launchd ค้าง — restart อีกครั้งเพื่อให้ถอดออกจากรายการถาวร
 - **หลังล้าง:** RAM ว่าง 88%, swap 0, Data volume ใช้ 157 GB เหลือ 282 GB (ได้คืน ~16 GB), ไม่มี process ใดกิน CPU เกิน 4%
+
+## ตรวจอาการเครื่องร้อน (2026-10-05)
+
+ตรวจตอน 19:02 uptime 11 ชม. — **ขณะตรวจเครื่องว่าง ไม่ throttle** สาเหตุความร้อนมาจากโหลดช่วงก่อนหน้า
+
+| ด้าน | ค่าที่วัดได้ | ประเมิน |
+|---|---|---|
+| Thermal | `pmset -g therm` ไม่มี thermal/performance warning, log 12 ชม. ไม่มีเหตุการณ์ thermal | ร้อนแต่ยังไม่ถึงขั้นลดความเร็ว |
+| CPU ขณะตรวจ | load avg 2.10 / 1.60 / 1.88, ไม่มี process เกิน 6% | ว่าง |
+| RAM | free 68%, swap 0 | ปกติ — แต่เกิด JetsamEvent 10:28 (process ใหญ่สุด = LINE) |
+
+**ผู้ต้องสงสัยหลัก (CPU สะสมตั้งแต่ boot):**
+1. **LINE — ตัวการหลัก:** `LineCall` (โทร/วิดีโอคอล) เริ่ม ~15:30 ใช้ CPU สะสม **39 นาที** ใน 3.5 ชม. + ตัวแอป LINE อีก 25 นาที; ระบบออกรายงาน disk writes เกินเกณฑ์ (11:36); `LINE.AudioService` ค้าง assertion `PreventUserIdleSystemSleep` **19 ตัว** → เครื่องไม่ได้ sleep เลยแม้ไม่ได้ใช้
+2. **WindowServer** 75 นาที — วาดจอคู่ (BenQ 3840×2560 + LG) ปกติแต่เพิ่มความร้อนพื้นฐาน
+3. **Spotlight (`mds_stores`)** 10 นาที + **`apfsd`** CPU 77% ช่วง 09:15 — น่าจะ index/จัดการไดรฟ์ภายนอก `Buncha_Backup` (APFS 2 TB) และ `P.Buncha` (exFAT 1 TB ผ่าน FSKit → `fskitd`/`UVFSService` ทำงานเพิ่ม)
+4. **Chrome** — disk writes เกินเกณฑ์ (11:46)
+
+**คำแนะนำ:**
+- หลังวางสาย LINE ให้ **Quit LINE (⌘Q)** แล้วเปิดใหม่ — เคลียร์ `LineCall` และ assertion กัน sleep; ถ้าคอลวิดีโอนานๆ ใช้ LINE บนมือถือแทน
+- ปิด Spotlight index ไดรฟ์ภายนอก: System Settings → Spotlight → Search Privacy → เพิ่ม `Buncha_Backup`, `P.Buncha`; eject ไดรฟ์ที่ไม่ได้ใช้
+- ตรวจการวางเครื่อง: ช่องระบายอากาศอยู่**ใต้เครื่อง** — อย่าวางบนผ้า/กระดาษ เว้นรอบเครื่อง ~10 ซม. อย่าวางของทับ
+- ดูอุณหภูมิจริงได้ด้วย `sudo powermetrics --samplers smc,thermal -n 1` หรือแอป **Stats** — ติดตั้งแล้ว 2026-10-05 (v3.0.20 ผ่าน `brew install --cask stats`) แสดงอุณหภูมิ/พัดลม/CPU บน menu bar
+
+## brew upgrade + ย้าย MySQL ไปรุ่น LTS 9.7 (2026-10-05)
+
+- `brew upgrade` อัปเดต 57 formula — Herd ใช้ PHP ของตัวเอง และ Node มาจาก nvm (v23.11.1) จึงไม่กระทบ
+- **ปัญหา:** `mysql` (สาย Innovation) กระโดดจาก 9.5 → **26.7** และเปิดฐานข้อมูลเดิมไม่ได้: `Cannot upgrade from 90500 to 260700` — รุ่น 26.7 รับการอัปเกรดจากรุ่น LTS ก่อนหน้า (9.7) เท่านั้น ข้อมูลไม่เสียหายเพราะหยุดก่อนเริ่มแปลง
+- **วิธีแก้:** `brew uninstall mysql` → `brew install mysql@9.7` → `brew services start mysql@9.7` (อัปเกรดข้อมูล 9.5 → 9.7.2 อัตโนมัติ) → `brew link --force mysql@9.7` ให้ใช้คำสั่ง `mysql` ได้
+- **ผล:** ตารางครบทุกฐาน และโปรเจกต์ dattajeewo-v2, monklife-admin, m-ptmc072-v2, takbat-ptmc เชื่อมต่อได้ปกติ
+- **ไฟล์สำรอง:** `~/mysql-backup-2026-10-05.sql` (dump 11 MB) + `~/mysql-datadir-9.5-backup-2026-10-05/` (โฟลเดอร์ข้อมูล 9.5 ทั้งชุด)
+- **บทเรียน:** ใช้ `mysql@<LTS>` แทน `mysql` เพื่อให้ `brew upgrade` อัปเดตเฉพาะรุ่นย่อยใน LTS เดียวกัน ส่วน LaunchAgent เปลี่ยนชื่อเป็น `sh.brew.mysql@9.7`
 
 ## แผนในอนาคต
 - (ยังไม่ระบุ)
