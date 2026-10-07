@@ -3,8 +3,8 @@ title: Claude Products — ทุก Interface ใน Claude Ecosystem
 tags: [claude, products, tools, claude-code, claude-ai, office, projects, api]
 category: concepts
 created: 2026-06-14
-updated: 2026-06-14
-sources: [claude-manual-stag-2026]
+updated: 2026-10-07
+sources: [claude-manual-stag-2026, kimi-agent-teams-guide-2026]
 summary: "8 Products ใน Claude Ecosystem — claude.ai Web/Mobile/Desktop, Claude Code CLI, Office Add-ins (Excel/Word/PowerPoint), Projects, Cowork, API+SDK พร้อม Decision Guide"
 provenance:
   extracted: 0.95
@@ -227,6 +227,10 @@ $ claude
 > 6. Run the test to verify the fix works
 # Claude will: read auth files → find bug → implement fix → run pytest → confirm green
 ```
+
+### Claude Code Agent Teams (experimental)
+
+งานใหญ่ที่แบ่งได้ ≥3 สายขนาน ให้ Claude Code รันหลายเซสชันเป็นทีม (lead + teammates) แยกไฟล์ด้วย worktree — ดู [[concepts/claude-code-agent-teams]] และ [[concepts/git-worktree-isolation]]
 
 ### Claude Code Tasks — เวลาที่ประหยัดได้
 
@@ -831,3 +835,4 @@ Build app/product บน Claude → API + SDK
 - [[concepts/claude-9-features|9 Features ของ Claude (API)]]
 - [[references/claude-api-cheatsheet|Claude API Cheatsheet]]
 - [[references/claude-complete-guide-2026|คู่มือ Claude ฉบับสมบูรณ์ 2026]]
+- [[concepts/claude-code-agent-teams|Claude Code Agent Teams]]

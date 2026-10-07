@@ -3,8 +3,8 @@ title: Claude Agent SDK (Unit 6)
 tags: [claude, agent, sdk, multi-agent, tool-use, python, production]
 category: concepts
 created: 2026-06-14
-updated: 2026-06-14
-sources: [claude-complete-guide-2026]
+updated: 2026-10-07
+sources: [claude-complete-guide-2026, kimi-agent-teams-guide-2026]
 summary: "Claude Agent SDK ครบ: Chatbot vs Agent, 5 Core Components, Multi-Agent Patterns, Safety/HITL, Production Observability, Memory Architecture, Error Handling พร้อม Python code 15 ตัวอย่าง"
 provenance:
   extracted: 0.90
@@ -120,6 +120,8 @@ tools = [
 ---
 
 ## 6.3 Multi-Agent Architecture
+
+> **ในทางปฏิบัติ:** Claude Code มีฟีเจอร์ [[concepts/claude-code-agent-teams|Agent Teams]] ที่ทำ pattern Orchestrator + Peer-to-Peer ให้สำเร็จรูป (lead, shared task list, mailbox, file lock) ^[inferred]
 
 | Type | Description | ใช้เมื่อ |
 |---|---|---|
@@ -828,3 +830,4 @@ def cost_optimized_agent(task: str, subtasks: list) -> str:
 - [[concepts/claude-products]] — Claude Code เป็น agent ที่ใช้ tool use ทุก action
 - [[skills/claude-mini-workflows]] — W13 Chatbot ก่อนมาเป็น Agent
 - [[references/claude-api-cheatsheet]] — Model IDs และ SDK ที่ใช้ใน code ตัวอย่าง
+- [[concepts/claude-code-agent-teams]] — Multi-agent สำเร็จรูปใน Claude Code: subagents vs teams

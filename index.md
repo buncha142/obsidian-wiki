@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-10-03 (เพิ่ม Buddhist-Era Date Picker Pattern + ตักบาตรพัทลุง 2569)*
+*This index is automatically maintained. Last updated: 2026-10-07 (เพิ่ม Claude Code Agent Teams + Git Worktree Isolation + Kimi Agent Swarm)*
 
 ## Concepts
 
@@ -19,6 +19,8 @@ title: Wiki Index
 - [[concepts/claude-products|Claude Products Ecosystem]] — claude.ai, Claude Code, Office Add-ins, Projects, Cowork, API — Decision Guide ว่าใช้อะไรเมื่อไหร่
 - [[concepts/claude-custom-skills|Claude Custom Skills (Unit 5)]] — SKILL.md Framework, 5 Layers, Domain Assistant, Prompt Library, Advanced Patterns
 - [[concepts/claude-agent-sdk|Claude Agent SDK (Unit 6)]] — Chatbot vs Agent, 5 Core Components, Multi-Agent Patterns, Safety/HITL, Production Observability, Memory Architecture, 15 Python code examples
+- [[concepts/claude-code-agent-teams|Claude Code Agent Teams]] — ทีม multi-agent experimental ใน Claude Code: lead/teammates/task list/mailbox, เทียบ subagents, use cases, do/don't
+- [[concepts/git-worktree-isolation|Git Worktree Isolation]] — แยก working directory ต่อ agent กันเขียนไฟล์ทับ (`isolation: worktree`, `claude -w`)
 
 ## Entities
 
@@ -26,7 +28,9 @@ title: Wiki Index
 - [[obsidian]] — Markdown note-taking app ที่ใช้เป็น viewer
 - [[entities/anthropic|Anthropic]] — บริษัท AI Safety ผู้สร้าง Claude
 - [[entities/claude|Claude]] — AI Assistant จาก Anthropic — Reasoning Engine ไม่ใช่ Search Engine
+- [[entities/kimi-agent-swarm|Kimi Agent Swarm]] — multi-agent no-code ของ Kimi, sub-agents สูงสุด 300 ตัว (ตัวเลขจากการตลาด)
 - [[entities/macmini-m4-2024|Mac mini M4 (2024)]] — เครื่องหลักที่โต๊ะทำงานห้องสติ ต่อจอคู่ BenQ + LG
+- [[entities/pc-ptmc072-desktop|PC-PTMC072]] — Desktop ASUS Z97-K + i7-4790 Windows 11 ตั้งใช้งานที่ห้องสติ มีบันทึกแก้ปัญหาบูต/สุขภาพ NV2
 - [[entities/benq-rd280u-monitor|BenQ RD280U]] — จอ Programming Monitor 28.2" 4K+ 3:2
 - [[entities/benq-screenbar-light|BenQ ScreenBar]] — โคมไฟ LED แขวนหน้าจอ ปรับแสง/อุณหภูมิสีอัตโนมัติ
 - [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]] — เครื่องสำรองไฟสำหรับ Mac mini + จอ
@@ -67,6 +71,7 @@ title: Wiki Index
 - [[references/claude-complete-guide-2026|คู่มือ Claude ฉบับสมบูรณ์ 2026]] — หนังสือ 500 หน้าโดย STAG (ingest Units 0–2 + Glossary)
 - [[references/claude-glossary|Claude & AI Glossary]] — คำศัพท์ AI ภาษาไทย-อังกฤษ 110+ คำ
 - [[references/claude-api-cheatsheet|Claude API Cheatsheet]] — Model IDs, ราคา, Python/TypeScript SDK
+- [[references/kimi-agent-teams-guide-2026|Claude Code Agent Teams Guide (Kimi, 2026)]] — web clipping ต้นฉบับของหน้า Agent Teams
 
 ## Synthesis
 

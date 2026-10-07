@@ -76,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 368.23046875
   },
   "right": {
     "id": "bf33e541d3ed7f1a",
@@ -180,6 +180,16 @@
   },
   "active": "654ca7c0f4a4340c",
   "lastOpenFiles": [
+    "_raw/Claude Code Agent Teams คู่มือฉบับครบถ้วนในปี 2026.md",
+    "references/kimi-agent-teams-guide-2026.md",
+    "entities/kimi-agent-swarm.md",
+    "concepts/git-worktree-isolation.md",
+    "concepts/claude-code-agent-teams.md",
+    "Users/miniboxmacmini/Documents/obsidian-wiki/_raw",
+    "Users/miniboxmacmini/Documents/obsidian-wiki",
+    "Users/miniboxmacmini/Documents",
+    "Users/miniboxmacmini",
+    "Users",
     "health/fitness/logs/2026-06-30.md",
     "_raw/be-date-picker-pattern-2026-07-06.md",
     "health/fitness/logs/weekly-2026-06-28_2026-07-05.md",
@@ -214,17 +224,7 @@
     "_raw/E4FDE433-95E6-4E37-B7D8-4723F694B84D.heic",
     "_raw/CC9574B9-4501-4A52-AC64-C556CC60340E.heic",
     "_raw/FEE2B3E2-1961-4C76-A29B-273085FBDC38.heic",
-    "_raw/6FC1B9A0-ECCB-45A0-9ECF-F6257ED8BCEF.heic",
     "health/fitness/full-body-stretch-25min.md",
-    "health/fitness/workout-plan.md",
-    "health/daily-routine.md",
-    "health/fitness/stretch-routines.md",
-    "health/fitness/logs/daily-template.md",
-    "health/fitness/logs/weekly-2026-06-16_2026-06-21.md",
-    "health/fitness/logs/2025-06-21.md",
-    "ยังไม่ได้ตั้งชื่อ.base",
-    "raw/livewire/Essentials",
-    "raw/livewire",
-    "raw"
+    "health/fitness/workout-plan.md"
   ]
 }

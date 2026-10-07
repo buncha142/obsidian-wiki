@@ -1,6 +1,6 @@
 ---
 title: Hot Cache
-updated: 2026-10-03
+updated: 2026-10-07
 ---
 
 # Hot Cache
@@ -9,18 +9,18 @@ updated: 2026-10-03
 
 ## Recent Activity
 
+- [2026-10-07] INGEST — web clip "Claude Code Agent Teams คู่มือฉบับครบถ้วน 2026" จาก kimi.ai (raw mode — ไฟล์แรกที่มาจาก Web Clipper → `_raw/`)
+  - **ใหม่:** concepts/claude-code-agent-teams — ทีม multi-agent ใน Claude Code (lead + teammates + shared task list + mailbox + file lock), ตาราง subagents vs teams, เกณฑ์ "<3 workstream อิสระ ใช้เซสชันเดียว", 5 use cases, do/don't; concepts/git-worktree-isolation; entities/kimi-agent-swarm; references/kimi-agent-teams-guide-2026
+  - **อัปเดต:** claude-agent-sdk (6.3 ชี้ไป Agent Teams), claude-products (4.4 Claude Code)
+- [2026-10-06] INGEST — `_raw/PC-PTMC072.md` (raw mode, 1 draft promoted)
+  - **ใหม่:** entities/pc-ptmc072-desktop — Desktop ASUS Z97-K + i7-4790 ลง Windows 11 ตั้งใช้งานที่ห้องสติ; แก้ปัญหาบูต 0xc000000e โดยย้าย EFI จาก USB มาไว้บน NV2
 - [2026-10-03] INGEST — `_raw/be-date-picker-pattern-2026-07-06.md` (raw mode, 1 draft promoted)
   - **ใหม่:** skills/html-date-picker-pattern — pattern เพิ่ม native calendar picker ให้ text field ที่เก็บวันที่ พ.ศ. ใน html-data-editor tools (hidden Gregorian `<input type=date>` + แปลง ±543 ปี) โดยไม่เปลี่ยน storage format; projects/takbat-phatthalung-2569 — project overview ย่อ ระบุว่าใช้ `coordination-log.html` เป็นที่มาของ pattern นี้
   - **อัปเดต:** index.md เพิ่มลิงก์ทั้งสองหน้า
-- [2026-07-12] INGEST — `_raw/IMG_0358.jpeg` (raw mode, 1 draft promoted)
-  - **ใหม่:** entities/tplink-tl-sg1024d-switch — TP-Link TL-SG1024D 24-Port Gigabit Switch, unmanaged, ไม่รองรับ LACP
-  - **อัปเดต:** entities/synology-ds920plus-nas เพิ่มหมายเหตุว่าสวิตช์ที่ใช้ไม่รองรับ Link Aggregation
-- [2026-07-11] INGEST — `_raw/IMG_0357.jpeg` (raw mode, 1 draft promoted)
-  - **ใหม่:** entities/synology-ds920plus-nas — Synology DS920+ 4-bay NAS ติดตั้งที่โต๊ะทำงาน office ห้องสติ อ่านจากรูปฉลากเครื่อง (S/N, MAC, DC Input)
-  - **อัปเดต:** entities/zircon-pi-ups-1000va เพิ่ม NAS เข้าไปในรายการอุปกรณ์ที่สำรองไฟด้วย UPS
 
 ## Key Claude Knowledge Added
 
+- **Agent Teams vs Subagents:** Subagents = มอบหมายทางเดียว ถูกกว่า; Teams = ร่วมมือ (peer messaging, task list, file lock) แพงกว่า — ใช้ทีมเมื่อมี ≥3 สายขนานอิสระ, ไม่เกิน 5 คน, แยกไฟล์ด้วย worktree, pre-approve permissions
 - **7.17 Hallucination 6 ประเภท:** Factual / Citation / Logical / Instruction / Entity / Temporal — แต่ละแบบมี Detection Strategy ต่างกัน Citation = check Google Scholar, Temporal = ใช้ web search
 - **RAG ลด Hallucination 70–90%:** ดึงข้อมูลจาก DB ส่งเป็น context แทนให้ Claude 'รู้' เอง — ทำได้ง่ายด้วย Chain-of-Verification: ถาม 'Verify each fact you just stated' หลังได้คำตอบ
 - **7.21 Thai Hallucination สูงกว่า EN:** Training data ไทยน้อยกว่า ให้ context มากขึ้น + verify Thai-specific knowledge เสมอ — Claude conservative กับหัวข้อ sensitive ไทย (ม.112) เป็นพฤติกรรมที่ถูกต้อง
