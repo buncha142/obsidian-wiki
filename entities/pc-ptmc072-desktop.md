@@ -5,7 +5,7 @@ category: entities
 created: 2026-10-06
 updated: 2026-10-09
 sources: [user-provided]
-summary: "Desktop ประกอบเอง เมนบอร์ด ASUS Z97-K + i7-4790 RAM 32 GB การ์ดจอ ZOTAC GTX 1060 6GB NVMe Kingston NV2 500 GB + HDD WD 500 GB ลง Windows 11 Pro ใหม่ 2026-10-06 ตั้งใช้งานที่ห้องสติ ใช้ไลฟ์สด Facebook/TikTok ด้วย OBS (NVENC); บันทึกการแก้ปัญหาบูต การอัปเกรด RAM/การ์ดจอ การสำรองและปลด HDD WD 1 TB ที่เสีย สุขภาพดิสก์ ไดรเวอร์ ค่า performance การ์ด PCIe ที่ถอดเก็บสำรอง (Wi-Fi TP-Link Archer T4E, USB 3.0 Renesas) และงานค้าง"
+summary: "Desktop ประกอบเอง เมนบอร์ด ASUS Z97-K + i7-4790 RAM 32 GB การ์ดจอ ZOTAC GTX 1060 6GB NVMe Kingston NV2 500 GB + HDD WD 500 GB ลง Windows 11 Pro ใหม่ 2026-10-06 ตั้งใช้งานที่ห้องสติ ใช้ไลฟ์สด Facebook/TikTok ด้วย OBS (NVENC) ใช้คีย์บอร์ด เมาส์ และจอ BenQ ร่วมกับ Mac mini M4 (ปุ่มแบบ Mac ผ่าน PowerToys, สลับจอผ่าน DDC/CI) เปิด Wake-on-LAN แล้ว; บันทึกการแก้ปัญหาบูต การอัปเกรด RAM/การ์ดจอ การสำรองและปลด HDD WD 1 TB ที่เสีย สุขภาพดิสก์ ไดรเวอร์ ค่า performance และงานค้าง"
 ---
 
 # PC-PTMC072
@@ -16,7 +16,12 @@ summary: "Desktop ประกอบเอง เมนบอร์ด ASUS Z97-
 
 Desktop ประกอบเอง บนเมนบอร์ด ASUS Z97-K ลง Windows 11 Pro ใหม่เมื่อ 2026-10-06 วันเดียวกันนั้นพบและแก้ปัญหาบูต แล้ววันที่ 2026-10-08 อัปเกรด RAM เป็น 32 GB ใส่การ์ดจอ GTX 1060 ตั้งค่า OBS ต่อ HDD เดิม 2 ลูก สำรองข้อมูล และปลด HDD 1 TB ที่เสีย
 
-> [!summary] สถานะล่าสุด (2026-10-08)
+> [!summary] สถานะล่าสุด (2026-10-09)
+> - **Wake-on-LAN ใช้งานได้** (ทดสอบแล้ว 14:25 แหล่งที่ปลุก = Realtek) เปลี่ยนไดรเวอร์แลนเป็น Realtek 10.10.714.2016 และเปิด BIOS Power On By PCI-E/PCI
+> - **ใช้อุปกรณ์ร่วมกับ Mac mini M4:** Keychron K6 (บลูทูธ), MX Master 3 (Unifying), จอ BenQ RD280U (PC = HDMI, Mac = USB-C) สลับจอด้วย Cmd+Option+2
+> - **ปุ่มคีย์บอร์ดแบบ Mac** ผ่าน PowerToys Keyboard Manager (Caps Lock สลับภาษา, Shift+Caps Lock = ตัวใหญ่ค้าง)
+>
+> **สถานะ 2026-10-08**
 > - ฮาร์ดแวร์หลักแข็งแรง: RAM 32 GB ผ่าน Memory Diagnostic, NV2 ไม่มี error (Unsafe คงที่ 22), การ์ดจอทำงานที่ PCIe 3.0 x16
 > - **แก้ปัญหาบูตแล้ว:** EFI bootloader ย้ายจากแฟลชไดรฟ์มาไว้บน NV2 ตั้งแต่ 2026-10-06
 > - **อัปเกรด 2026-10-08:** RAM 24 → 32 GB, ZOTAC GTX 1060 6GB (ไดรเวอร์ 582.78), OBS 32.2.2 + โปรไฟล์ NVENC, ปิด Fast Startup
@@ -35,17 +40,19 @@ Desktop ประกอบเอง บนเมนบอร์ด ASUS Z97-K �
 | RAM | **32 GB** DDR3-1600 1.5 V, 8 GB × 4 ช่อง (A1, A2, B1, B2) dual channel สมมาตร (ดูหมายเหตุ RAM) |
 | การ์ดจอ | **ZOTAC GeForce GTX 1060 6GB AMP! Edition** (Pascal, `10DE:1C03`, subsystem `19DA:1438`), VBIOS 86.06.45.00.3c, power limit 120 W, ช่อง PCIe 3.0 x16 ช่องบน ลิงก์ Gen3 x16 |
 | การ์ดจอออนบอร์ด | Intel HD Graphics 4600 ซึ่ง BIOS ปิดให้อัตโนมัติเมื่อมีการ์ดจอแยก |
-| จอ | **BenQ RD280U** (28" 3:2, ความละเอียดจริง 3840×2560, EDID `BNQ805B`) ต่อด้วย **HDMI** จึงได้ 3840×2560 @ **50 Hz** (ดูหัวข้อ "จอและสาย") |
+| จอ | **BenQ RD280U** (28" 3:2, ความละเอียดจริง 3840×2560, EDID `BNQ805B`) ต่อด้วย **HDMI** จึงได้ 3840×2560 @ **50 Hz** (ดูหัวข้อ "จอและสาย") ใช้ร่วมกับ Mac mini ผ่าน USB-C สั่งสลับช่องผ่าน DDC/CI ได้ |
 | SSD | Kingston NV2 `SNV2S500G` 500 GB NVMe, firmware `SBN00100`, S/N `0026_B778_5C65_D8B5` |
 | ลิงก์ของ SSD | **PCIe Gen2 x2** (ตัวไดรฟ์รองรับ Gen4 x4) ต่อผ่าน chipset root port 1 (`8086:8C90`) |
 | ไดรเวอร์ NVMe | Microsoft `stornvme` 10.0.26100.9278 |
 | HDD | **WD Blue 500 GB** `WD5000AZLX` = ไดรฟ์ `G:` "Data" (ดูหัวข้อ HDD) ส่วน WD Blue 1 TB `WD10EZEX` **เสียและถอดออกแล้ว** (2026-10-08) |
 | ตำแหน่ง HDD | อยู่ในช่องใต้ฝาครอบ PSU (PSU shroud) ฝั่งหน้าเคส ต้องเปิดฝาข้างด้านหลังเมนบอร์ดจึงจะถอดได้ |
 | Storage controller | Intel SATA โหมด **AHCI** (`storahci`) |
-| เครือข่าย | Realtek PCIe GbE 1 Gbps (ต่อสาย) |
+| เครือข่าย | Realtek RTL8168 PCIe GbE 1 Gbps (ต่อสาย) MAC `1C-87-2C-60-24-3C`, IP `192.168.200.108` (DHCP) ไดรเวอร์ Realtek 10.10.714.2016 **เปิด Wake-on-LAN แล้ว** (ดูหัวข้อ "Wake-on-LAN และรีโมต") |
+| Wi-Fi | ไม่มีในตัว (Z97-K ไม่มี Wi-Fi และบลูทูธ) |
+| บลูทูธ | USB dongle CSR `0A12:0001` **Bluetooth 4.0** ไดรเวอร์ Microsoft `bth.inf` น่าจะเป็นชิปเลียนแบบ CSR8510 (คาดการณ์) ใช้กับ Keychron K6 |
+| อุปกรณ์ป้อนข้อมูล | Keychron K6 (บลูทูธ) และ Logitech MX Master 3 (ตัวรับ Unifying `046D:C52B`) ใช้ร่วมกับ Mac mini (ดูหัวข้อ "อุปกรณ์ร่วมกับ Mac mini") |
 | เสียง | ออนบอร์ด (ใช้ไดรเวอร์ทั่วไปของ Microsoft "High Definition Audio Device" ยังไม่ใช่ไดรเวอร์ Realtek) และ NVIDIA HD Audio (ส่งเสียงไปลำโพงจอ BenQ) **ยังไม่มีไมค์ที่ใช้งานได้** |
-| USB 3.0 | Intel xHCI ออนบอร์ด ส่วนการ์ด Renesas USB 3.0 แบบ PCIe **ถอดออกแล้ว** (2026-10-08, ดูหัวข้อ "การ์ดที่ถอดเก็บสำรอง") |
-| Wi-Fi | ไม่มี การ์ด TP-Link Archer T4E **ถอดเก็บสำรองแล้ว** (ดูหัวข้อ "การ์ดที่ถอดเก็บสำรอง") |
+| USB 3.0 | Intel xHCI ออนบอร์ด ส่วนการ์ด Renesas USB 3.0 แบบ PCIe **ถอดออกแล้ว** (2026-10-08) |
 | PSU | Cougar STC750 750 W, +12V rail เดียว 60 A / 720 W, 80 PLUS (ระดับพื้นฐาน), TÜV Rheinland, หัว PCIe 6+2 pin สองหัว (ดูหัวข้อ "ผลตรวจ PSU") |
 | พัดลมเคส | หน้า DeepCool CF120C × 3 และหลัง × 1 |
 | OS | Windows 11 Pro 64-bit build 26300 (Retail, Licensed) ลงเมื่อ 2026-10-06 13:49 |
@@ -197,6 +204,66 @@ Desktop ประกอบเอง บนเมนบอร์ด ASUS Z97-K �
 
 สำหรับไลฟ์: จอเป็นสัดส่วน 3:2 แต่ OBS เป็น 16:9 ให้ใช้ "จับภาพเกม" หรือ "จับภาพหน้าต่าง" แทนจับภาพทั้งจอ ส่วนเกมควรตั้งความละเอียดในเกมเป็น 1920×1080
 
+## อุปกรณ์ร่วมกับ Mac mini (2026-10-09)
+
+ใช้คีย์บอร์ด เมาส์ และจอชุดเดียวกับ [[entities/macmini-m4-2024|Mac mini M4]] แล้วสลับเครื่องด้วยมือ
+
+| สลับไป | จอ | Keychron K6 | MX Master 3 |
+|---|---|---|---|
+| **PC** | Cmd+Option+1 (ตั้งใน Display Pilot 2 บน Mac ยังไม่ได้ตั้ง) | Fn+1 (บลูทูธ ช่อง 1) | ปุ่ม 1 (Unifying) |
+| **Mac** | **Cmd+Option+2** (PowerToys → MonitorInput.exe) | Fn+2 (บลูทูธ ช่อง 2) | ปุ่ม 2 (บลูทูธ) |
+
+- **Keychron K6:** ต่อผ่าน dongle บลูทูธ CSR (MAC ของคีย์บอร์ด `DC:2C:26:FC:7B:D4`) แจ้งตัวเป็นรหัส Apple `05AC:024F` **สวิตช์ข้างคีย์บอร์ดค้างไว้ที่ Mac/iOS ตลอด** การแมปปุ่มด้านล่างออกแบบสำหรับโหมดนี้
+- **MX Master 3:** ต่อผ่านตัวรับ Unifying ลง **Logi Options+ 2.9.984725** (winget `Logitech.OptionsPlus` ตัวติดตั้งมีลายเซ็น Logitech Inc) winget แจ้งรหัส 1008 แต่ติดตั้งครบ เพราะตัวติดตั้งไปโหลดเวอร์ชันที่ใหม่กว่ามาลงเอง
+- ถอดตัวรับของคีย์บอร์ด AJAZZ AK820 MAX และตัวรับเมาส์ Logitech นาโน `046D:C52F` ออกแล้ว
+- dongle บลูทูธเป็น BT 4.0 ใช้ไมค์บลูทูธได้แค่โหมดคุณภาพต่ำ (HFP) จึง**ไม่เหมาะกับไมค์ไลฟ์** Event BTHUSB 34/18 ตอนเสียบเป็นเรื่องปกติของชิปรุ่นเก่า
+
+### ปุ่มคีย์บอร์ดแบบ Mac (PowerToys Keyboard Manager)
+
+ติดตั้ง **PowerToys 0.101.2362** (winget `Microsoft.PowerToys` แบบ user scope) ไฟล์ตั้งค่าอยู่ที่ `%LOCALAPPDATA%\Microsoft\PowerToys\Keyboard Manager\default.json` เปิด editor ด้วย Ctrl+Shift+Q (ตำแหน่ง Mac) หรือปิดการแมปทั้งหมดได้ที่สวิตช์ Keyboard Manager ในแอป
+
+| กดบน K6 (โหมด Mac) | Windows ทำ |
+|---|---|
+| Cmd (ซ้าย/ขวา) | Ctrl ทำให้ Cmd+C/V/X/Z/A/S/F/T/W ใช้ได้เหมือน Mac |
+| Ctrl ตัวซ้ายสุด | Win |
+| **Caps Lock** | สลับภาษาไทย ↔ อังกฤษ (Win+Space) |
+| **Shift + Caps Lock** | เปิด/ปิด Caps Lock (ทดสอบแล้วใช้ได้) |
+| Cmd+Space / Cmd+Q / Cmd+Tab | ค้นหา / Alt+F4 / Alt+Tab |
+| Ctrl+Tab | สลับแท็บ |
+| Cmd+←/→, Cmd+↑/↓ | ต้นหรือท้ายบรรทัด, ต้นหรือท้ายเอกสาร |
+| Option+←/→, Option+Backspace | กระโดดทีละคำ, ลบทีละคำ |
+| Cmd+Shift+Z / 3 / 4 | Redo / จับภาพเต็มจอ / Snipping Tool |
+| Cmd+[ / ] (Chrome, Edge) | ย้อนกลับ / ไปหน้าถัดไป |
+
+ข้อจำกัด: การแมปปุ่มไม่ทำงานในโปรแกรมที่รันแบบ Administrator ยกเว้นตั้ง PowerToys ให้รันแบบ admin ด้วย และใน Windows ภาษาไทย ปุ่ม `` ` `` ยังเป็นปุ่มสลับภาษาตามค่าเริ่มต้น
+
+### สลับช่องจอ BenQ RD280U ผ่าน DDC/CI
+
+- จอตอบคำสั่ง DDC/CI (MCCS 2.2) ช่องสัญญาณ VCP `0x60`: `0x0F` = DisplayPort, `0x11` = HDMI (PC), **`0x13` = USB-C (Mac)** ยืนยันด้วยการทดสอบจริงเมื่อ 2026-10-09
+- **`C:\Users\ptmc0\Scripts\MonitorInput\MonitorInput.exe <รหัส>`** โปรแกรม 6 KB ที่คอมไพล์จาก `MonitorInput.cs` ในโฟลเดอร์เดียวกันด้วย csc ของ .NET Framework ไม่เปิดหน้าต่าง บันทึกผลลง `MonitorInput.log`
+- PowerToys ผูก **Cmd+Option+2** (= Ctrl+Alt+2 หลังแมปปุ่ม) ให้รัน `MonitorInput.exe 0x13`
+- ฝั่ง Mac ต้องใช้ **BenQ Display Pilot 2** (หรือ BetterDisplay / `m1ddc set input 17`) เพื่อสลับกลับมา HDMI ระหว่างนี้ใช้ปุ่มที่จอไปก่อน
+- RD280U มี KVM ในตัว แต่ไม่ได้ใช้ เพราะคีย์บอร์ดและเมาส์เป็นแบบไร้สาย
+
+## Wake-on-LAN และรีโมต (2026-10-09)
+
+- เครื่องนี้ถูกรีโมตจาก Mac mini (192.168.200.177) ผ่าน **SSH** (`sshd` Automatic, พอร์ต 22) และ **RDP** (TermService, พอร์ต 3389)
+- **WoL ใช้งานได้:** ทดสอบเมื่อ 14:23:45 สั่ง Sleep (S3) แล้วตื่นเมื่อ 14:25:05 Event Power-Troubleshooter และ `powercfg /lastwake` ระบุแหล่งที่ปลุก = **Realtek PCIe GBE Family Controller** firmware resume ประมาณ 0.7 วินาที
+- คำสั่งปลุกจาก Mac: `wakeonlan -i 192.168.200.255 1C:87:2C:60:24:3C` (ติดตั้งด้วย `brew install wakeonlan`)
+
+| รายการ | ก่อน | หลัง |
+|---|---|---|
+| ไดรเวอร์แลน | Microsoft 9.1.412.2015 (2015-03-31) WoL = Unsupported | **Realtek 10.10.714.2016** (2016-07-14) จาก Windows Update (UpdateID `c2e4a0cb-fb39-44f7-bcc8-100c3de59d24`) match `SUBSYS_859E1043&REV_11 ;ASUS` โดยตรง • .cat ลงนามโดย Microsoft Windows Hardware Compatibility Publisher • .sys ลงนามโดย Realtek Semiconductor Corp. |
+| WakeOnMagicPacket / WakeOnPattern | Unsupported / Unsupported | **Enabled / Disabled** |
+| S5 WoL / EEE / Green Ethernet | ไม่มีให้ตั้ง | Enabled / Disabled / Disabled |
+| wake_armed | คีย์บอร์ดและเมาส์ | คีย์บอร์ด เมาส์ และ **Realtek** |
+| BIOS (Advanced → APM) | Power On By PCI-E/PCI = Disabled | **Enabled** ส่วน Deep S4 = Disabled (BIOS นี้ไม่มีเมนู ErP Ready) ค่าอื่นไม่ได้แตะ |
+
+- ไดรเวอร์ตัวเดิมสำรองไว้ที่ `C:\DriverBackup\2026-10-09\` (rt640x64.inf/.sys + `baseline-before.txt` + `install.log`) ย้อนกลับด้วย Device Manager → Roll Back Driver
+- ไม่ได้สร้าง restore point ใหม่ เพราะ Windows จำกัดวันละ 1 จุด และมีจุดจาก Windows Update เวลา 07:52 อยู่แล้ว
+- ⚠️ หลังรีบูต `Get-NetAdapterPowerManagement` แจ้ง error 31 **กับทุกการ์ด** ส่วนที่มีปัญหาน่าจะเป็นตัวที่ Windows ใช้อ่านข้อมูลการ์ดผ่าน CIM (คาดการณ์) ไม่กระทบ WoL ให้ตรวจค่าจาก registry (`Get-NetAdapterAdvancedProperty`) และ `powercfg /devicequery wake_armed` แทน
+- ⚠️ Event Tcpip 4199: IPv6 address ชนกับอุปกรณ์อื่นในวง (`B8-E8-56-39-2A-CA` ซึ่ง B8-E8-56 เป็น prefix ของ Apple และ `8A-B5-61-22-CA-4B`) น่าจะเกิดจาก DHCPv6 ของเราเตอร์ (คาดการณ์) IPv4 ไม่มีปัญหา
+
 ## OBS และการไลฟ์
 
 - **OBS Studio 32.2.2** (ติดตั้งผ่าน winget `OBSProject.OBSStudio` ตรวจ hash และลายเซ็นแล้ว) UI เป็นภาษาไทย
@@ -226,7 +293,12 @@ Desktop ประกอบเอง บนเมนบอร์ด ASUS Z97-K �
 | Intel Chipset INF รุ่นล่าสุด 10.1.20658.8883 | ⚠️ บนเครื่องนี้รันไม่ได้ (exit `0xE0000001`) ให้ใช้แพ็กเกจของ ASUS แทน |
 | **NVIDIA** | **582.78** "GeForce Security Update Driver" (2026-09-30, DCH, ลายเซ็น NVIDIA Corporation) อัปเดตจาก 560.94 เมื่อ 2026-10-08 Pascal ได้แค่อัปเดตความปลอดภัยแล้ว ไม่มี Game Ready รุ่นใหม่ |
 | NVIDIA App 11.0.5 + ShadowPlay | **ถอนแล้ว** (2026-10-08 ~23:30 ด้วย `NVI2.DLL,UninstallPackage Display.NvApp -silent`) ส่วนประกอบ 12 รายการหายไปทั้งหมด เหลือไดรเวอร์จอ, HD Audio, PhysX, Install Application และ FrameView SDK (ไม่มีโปรแกรมใช้แล้ว ถอนได้ถ้าต้องการ) ข้อเสียคือไม่มีแจ้งเตือนไดรเวอร์ใหม่อัตโนมัติ ให้เช็กที่ nvidia.com เป็นระยะ |
-| `ACPI\PNP0A0A` (`\_SB.MBDA`) | ยังไม่มีไดรเวอร์ น่าจะเป็นอุปกรณ์ ACPI เฉพาะของ ASUS (คาดการณ์) ปล่อยไว้ได้ |
+| `ACPI\PNP0A0A` (`\_SB.MBDA`) | ยังไม่มีไดรเวอร์ (error code 28) น่าจะเป็นอุปกรณ์ ACPI เฉพาะของ ASUS (คาดการณ์) ปล่อยไว้ได้ Windows Update มีไดรเวอร์ ASUS 1.0.1.0 (2014-03-17) ให้เป็นตัวเลือก ยังไม่ได้ติดตั้ง |
+| **Realtek LAN** | **10.10.714.2016** จาก Windows Update (2026-10-09) แทนไดรเวอร์ Microsoft 9.1.412.2015 เพื่อใช้ WoL |
+| บลูทูธ (CSR dongle) | Microsoft `bth.inf` ที่มากับ Windows |
+| Logi Options+ | 2.9.984725 + Logi Plugin Service 6.4.2.3414 มีบริการ `OptionsPlusUpdaterService` (Automatic) |
+| PowerToys | 0.101.2362 (user scope) เปิดพร้อมเครื่องผ่าน scheduled task `\PowerToys\Autorun for ptmc0` |
+| ไดรเวอร์ทางเลือกใน Windows Update ที่ยังไม่ได้ติดตั้ง | Intel 9 Series chipset (2016), Intel HD 4600 20.19.15.4624, ASUS ACPI 1.0.1.0, LG monitor extension (ไม่ต้องลง) |
 
 หน้าซัพพอร์ตของ ASUS Z97-K ค้นหาจากเว็บ ASUS ไม่เจอ ต้องเข้าลิงก์ตรง: https://www.asus.com/supportonly/z97-k/helpdesk_download/
 
@@ -265,47 +337,13 @@ Desktop ประกอบเอง บนเมนบอร์ด ASUS Z97-K �
 - [x] (10-08) ฟอร์แมต WD 500 GB เป็น `G:` Data แล้วสำรองข้อมูลจาก WD 1 TB ไปไว้
 - [x] (10-08) ลบพาร์ทิชัน WD 1 TB (ฟอร์แมตไม่ผ่าน) แล้วถอดดิสก์ออกจากเครื่อง
 - [x] (10-08) ถอน NVIDIA App ออก
-- โปรแกรมที่เปิดพร้อมเครื่อง: OneDrive, SecurityHealth
+- [x] (10-09) เสียบ dongle บลูทูธ CSR จับคู่ Keychron K6 และตัวรับ Unifying ของ MX Master 3 แล้วลง Logi Options+
+- [x] (10-09) ลง PowerToys และตั้ง Keyboard Manager ให้ปุ่มเหมือน Mac รวมถึงปุ่มลัดสลับจอ Cmd+Option+2 ส่วนโมดูลอื่นของ PowerToys ยังเปิดอยู่ตามค่าเริ่มต้น
+- [x] (10-09) สร้าง `MonitorInput.exe` สำหรับสลับช่องจอผ่าน DDC/CI
+- [x] (10-09) เปลี่ยนไดรเวอร์แลนเป็น Realtek, ตั้งค่า WoL (ปิด EEE และ Green Ethernet) และเปิด BIOS Power On By PCI-E/PCI
+- โปรแกรมที่เปิดพร้อมเครื่อง: OneDrive, SecurityHealth, Logitech Download Assistant ×2 (มากับ Logi Options+ ปิดได้), PowerToys (ผ่าน scheduled task)
 - Sleep: 15 นาทีเมื่อเสียบปลั๊ก (เปิด hybrid sleep, Hibernate after = Never) ปิดชั่วคราวระหว่างงานยาวแล้วตั้งกลับแล้ว
 - ค่าที่ไม่ได้เปลี่ยน: power plan เป็น Balanced, Transparency เปิดอยู่
-
-## การ์ดที่ถอดเก็บสำรอง
-
-บันทึกเมื่อ 2026-10-09 จากภาพถ่ายการ์ดจริง ทั้งสองใบเป็น PCIe x1 ใส่กลับได้ที่ช่อง PCIe x1 ของ Z97-K (ช่อง PCIe 3.0 x16 ช่องบนใช้กับการ์ดจออยู่)
-
-### 1. TP-Link Archer T4E — การ์ด Wi-Fi
-
-| รายการ | ค่า |
-|---|---|
-| รุ่น | **Archer T4E(US) Ver 1.0** — AC1200 Wireless Dual Band PCI Express Adapter |
-| S/N | `2223IQ4005260` (อ่านจากสติกเกอร์ ตัว `I`/`1` อาจสลับกัน) |
-| FCC ID / IC | `TE7T4E` / `8853A-T4E` |
-| อินเทอร์เฟซ | PCIe x1 |
-| ความเร็ว | 802.11ac 2×2 dual band: 5 GHz สูงสุด 867 Mbps + 2.4 GHz สูงสุด 300 Mbps |
-| เสาอากาศ | 2 ต้น แบบถอดได้ (ขั้ว RP-SMA) ติดมากับการ์ด |
-| Bracket | ตอนนี้ติด bracket ความสูงเต็ม (full-height) ตัวการ์ดเป็นแบบ low-profile |
-| ชิป | Realtek RTL8812AE ^[inferred] (ตามสเปก v1 ที่เผยแพร่ ยังไม่ได้ตรวจบนเครื่อง) |
-
-- ถอดเมื่อ: ไม่ได้บันทึกวันที่ไว้ ตอนนี้เครื่องใช้สายแลน Realtek GbE ซึ่งเสถียรกว่าสำหรับการไลฟ์ ^[inferred]
-- ใส่กลับเมื่อ: ต้องย้ายเครื่องไปจุดที่ไม่มีสายแลน หรือสายแลนเสีย
-- ไดรเวอร์: Windows 11 มักลงให้เองผ่าน Windows Update ถ้าไม่ขึ้น ให้โหลดจากหน้าซัพพอร์ต TP-Link ของ Archer T4E **V1** ^[inferred]
-
-### 2. PCE3U1C-R31 VER 005 — การ์ด USB 3.0 (Renesas)
-
-| รายการ | ค่า |
-|---|---|
-| รุ่นบนแผงวงจร | `PCE3U1C-R31` VER 005 (การ์ดจีนไม่มียี่ห้อ มีตรา CE/FCC) |
-| ชิป controller | **Renesas µPD720201** (USB 3.0 / 5 Gbps) ตรงกับที่ Windows เคยเห็นเป็น "Renesas USB 3.0" ก่อนถอด แม้ชื่อรุ่นจะมี "R31" ก็ไม่ใช่ USB 3.1 Gen 2 |
-| พอร์ตด้านหลัง | USB-C × 1 + USB-A × 1 |
-| ไฟเลี้ยง | **ต้องเสียบหัว SATA power จาก PSU** (ขั้วต่อ J5 ที่ขอบการ์ด) ไม่งั้นพอร์ตจ่ายไฟให้อุปกรณ์ไม่พอ |
-| อินเทอร์เฟซ | PCIe x1 |
-| Bracket | ความสูงเต็ม (full-height) |
-| ตำแหน่งเดิม | PCIe Root Port 8 (`8C9E`) |
-| ถอดเมื่อ | 2026-10-08 ~17:30 พร้อมตอนใส่การ์ดจอ |
-
-- ใส่กลับเมื่อ: ต้องการพอร์ต USB-C หรือพอร์ต USB 3.0 เพิ่มด้านหลัง (เช่น กล้อง/การ์ดจับภาพสำหรับไลฟ์)
-- ข้อควรระวัง: ทำตามกฎ **Shift + Shut down แล้วปิดสวิตช์ PSU** ก่อนใส่ และอย่าลืมเสียบสาย SATA power
-- ไดรเวอร์: Windows 10/11 มีไดรเวอร์ xHCI ของ Microsoft ในตัว ไม่ต้องลงเพิ่ม
 
 ## ผลตรวจ PSU: Cougar STC750 ✅ ผ่าน (ตรวจจากฉลาก)
 
@@ -335,6 +373,12 @@ Desktop ประกอบเอง บนเมนบอร์ด ASUS Z97-K �
 - [x] ~~ซื้อการ์ดจอแยก~~ ซื้อ ZOTAC GTX 1060 6GB AMP! มือสองพร้อมแรม `HX316C10FR/8` ในราคารวมที่เสนอ ฿2,900 (2026-10-07)
 - [x] ~~เพิ่ม RAM ให้ครบ 32 GB~~ ทำแล้ว 2026-10-08
 - [ ] ~~ย้าย NV2 ไปการ์ดแปลง M.2 → PCIe x16~~ **ทำไม่ได้แล้ว** เพราะการ์ดจอใช้ช่อง PCIe 3.0 ตัวเดียวที่มี
+- [ ] **🟡 ตั้ง Display Pilot 2 บน Mac:** Cmd+Option+1 สลับจอไป HDMI และจับคู่ K6 (Fn+2) กับ MX Master 3 (ช่อง 2) กับ Mac
+- [ ] **⚠️ ปิด qBittorrent ให้หมดก่อนไลฟ์** (คลิกขวาที่ tray → Exit) ไม่อย่างนั้นอาจแย่ง upload
+- [ ] (ไม่บังคับ) ลดโปรแกรมเบื้องหลัง ได้ RAM คืนประมาณ 1 GB: ปิดโมดูล PowerToys ที่ไม่ได้ใช้ (Shortcut Guide, Command Palette, Color Picker, Peek, FancyZones, Awake, Always On Top, Quick Access), ปิด Logi Download Assistant ใน startup, ปิด M365 Copilot และ Widgets
+- [ ] (ไม่บังคับ) ถ้าเครื่องตื่นเองบ่อย ให้ปิดสิทธิ์ปลุกเครื่องของเมาส์ (ตอนทดสอบ WoL รอบแรก เครื่องตื่นเพราะ USB)
+- [ ] (ไม่บังคับ) ถ้าปุ่ม `` ` `` สลับภาษาโดยไม่ตั้งใจ ให้ปิด hotkey นี้ใน Windows
+- [ ] ดูต้นเหตุ IPv6 address ชนกัน (Tcpip 4199) ที่เราเตอร์
 
 ## คำสั่งที่ใช้บ่อย
 
@@ -363,6 +407,14 @@ powercfg /change standby-timeout-ac 15   # Sleep หลัง 15 นาที
 
 # สถานะการ์ดจอ
 nvidia-smi --query-gpu=name,driver_version,pcie.link.gen.max,pcie.link.width.max,temperature.gpu,power.draw --format=csv
+
+# Wake-on-LAN: ค่าในไดรเวอร์ อุปกรณ์ที่ปลุกเครื่องได้ และตัวที่ปลุกครั้งล่าสุด
+Get-NetAdapterAdvancedProperty -Name 'อีเทอร์เน็ต' -RegistryKeyword '*WakeOnMagicPacket','*WakeOnPattern','S5WakeOnLan','EEE','EnableGreenEthernet'
+powercfg /devicequery wake_armed
+powercfg /lastwake
+
+# สลับจอ BenQ ด้วยคำสั่ง (0x11 = HDMI/PC, 0x13 = USB-C/Mac)
+& "$env:USERPROFILE\Scripts\MonitorInput\MonitorInput.exe" 0x13
 ```
 
 > [!example]- สคริปต์อ่าน NVMe SMART log (ไม่ต้องลงโปรแกรม)
@@ -433,6 +485,22 @@ nvidia-smi --query-gpu=name,driver_version,pcie.link.gen.max,pcie.link.width.max
 | 23:04–23:15 | ปิดเครื่องปกติ 2 รอบ แล้ว**ถอด WD 1 TB ออก** |
 | 23:25 | ตรวจหลังถอด: เหลือ NV2 + WD 500 GB, บูตจาก NV2, ไม่มี error หรือจอฟ้าใหม่, สำเนาข้อมูลครบ 60,545 ไฟล์, GTX 1060 ปกติ |
 | ~23:30 | ถอน NVIDIA App (ไดรเวอร์ 582.78 ยังทำงานปกติ) |
+
+### 2026-10-09
+
+| เวลา | เหตุการณ์ |
+|---|---|
+| ~10:30 | ประเมินการ์ด TP-Link Archer T4E (Wi-Fi อย่างเดียว ไม่มีบลูทูธ) และการ์ด USB-C PCE3U1C-R31 จากรูป **ยังไม่ได้ใส่ทั้งคู่** |
+| 10:48 | เสียบ dongle บลูทูธ CSR (BT 4.0) |
+| 10:51 | เสียบตัวรับ Unifying ของ MX Master 3 |
+| 10:56 | ลง Logi Options+ 2.9 |
+| ~11:00 | จับคู่ Keychron K6 ผ่านบลูทูธ และถอดตัวรับ AJAZZ กับ Logitech C52F ออก |
+| 11:12–11:24 | ลง PowerToys 0.101 แล้วตั้งปุ่มแบบ Mac และ Shift+Caps Lock |
+| 12:27–12:32 | สร้าง MonitorInput.exe และผูกปุ่ม Cmd+Option+2 ทดสอบสลับจอไป USB-C ผ่าน 4 ครั้ง |
+| ~12:40 | สำรวจโปรแกรมเบื้องหลัง: RAM ว่าง 24.4/31.9 GB พบ qBittorrent เปิดอยู่ และพบโปรแกรมที่ไม่จำเป็น (ยังไม่ได้ปิด) |
+| ~13:50–14:05 | งาน WoL: สำรองไดรเวอร์เดิม ลงไดรเวอร์ Realtek จาก Windows Update (ติดตั้งเสร็จ 14:02 ไม่ต้องรีบูต) แล้วตั้งค่า WoL |
+| 14:11–14:18 | ตั้ง BIOS Power On By PCI-E/PCI = Enabled แล้วรีบูต ตรวจหลังบูต: ค่าทั้งหมดอยู่ครบ sshd/RDP ปกติ |
+| 14:23–14:25 | ทดสอบ WoL: สั่ง Sleep แล้วปลุกด้วย magic packet จาก Mac **ผ่าน** |
 
 ## Related
 - [[entities/macmini-m4-2024]] — เครื่องหลักอีกเครื่องในห้องสติ

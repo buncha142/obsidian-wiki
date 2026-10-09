@@ -120,6 +120,16 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - ถ้าอัปเกรด skhd ผ่าน `brew upgrade` path ใน Cellar จะเปลี่ยน → ต้องให้สิทธิ์ Accessibility ใหม่ แล้วรัน `skhd --restart-service`
 - เพิ่มปุ่มอื่นได้ที่ `skhdrc` เช่น `cmd + alt - 2 : ~/bin/benq-input.sh usbc` (ใช้ได้เฉพาะตอนจอยังแสดง Mac อยู่)
 
+### ควบคุม PC-PTMC072 จาก Mac (2026-10-09) ✅ ทดสอบผ่าน
+
+| ช่องทาง | วิธีใช้บน Mac |
+|---|---|
+| **SSH** | `ssh pc` → เข้า PowerShell ของ PC ทันทีโดยไม่ต้องใส่รหัสผ่าน (ใช้กุญแจ `~/.ssh/id_ed25519`) |
+| **Remote Desktop** | แอป **Windows App** → เพิ่ม PC `PC-PTMC072.local` ผู้ใช้ `ptmc0` + รหัสผ่าน Windows |
+
+- alias `pc` อยู่ใน `~/.ssh/config` (สำรองไฟล์เดิมไว้ที่ `~/.ssh/config.bak-2026-10-09`)
+- Claude Code บน Mac สั่งคำสั่งบน PC ได้ตรงๆ เช่น `ssh pc 'Get-Service sshd'`
+- รายละเอียดฝั่ง PC และข้อควรระวัง (Sleep, ห้ามใช้ RDP ระหว่างไลฟ์): ดู [[entities/pc-ptmc072-desktop]]
 ## ผลตรวจสมรรถภาพ (2026-09-04)
 
 ตรวจตอน uptime 18 นาที — **สุขภาพดีทุกด้าน ไม่มีคอขวด**
