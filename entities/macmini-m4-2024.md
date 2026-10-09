@@ -3,9 +3,9 @@ title: "Mac mini M4 (2024)"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-10-05
+updated: 2026-10-09
 sources: [user-provided]
-summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง และการตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio"
+summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง การตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio และปุ่มลัด Cmd+Option+1 สลับจอ BenQ ไป HDMI (PC-PTMC072) ด้วย m1ddc + skhd"
 ---
 
 # Mac mini M4 (2024)
@@ -25,13 +25,25 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - **Serial number:** WGFQJ4M5WH
 - **Limited Warranty:** หมดอายุ 7 ธันวาคม 2569 (พ.ศ.) — ครอบคลุม Hardware Service และ Chat/Phone Support
 - **จอที่ต่อใช้งาน:**
-  - [[entities/benq-rd280u-monitor|BenQ RD280U]] — 28.2 นิ้ว (3840 × 2560)
+  - [[entities/benq-rd280u-monitor|BenQ RD280U]] — 28.2 นิ้ว (3840 × 2560) ต่อทาง **USB-C** (ใช้จอร่วมกับ [[entities/pc-ptmc072-desktop|PC-PTMC072]] ที่ต่อทาง HDMI)
   - LG FULL HD — 24 นิ้ว (1080 × 1920)
 
 ## การใช้งานจริง
 - **ใช้ทำอะไรเป็นหลัก:** dev โปรเจค Laravel/TALL Stack (admin.ptmc072), งานธุรการ/เอกสาร, ประชุมออนไลน์และสื่อสาร
 - **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** VS Code + [[entities/claude|Claude]] Code, Google Workspace (Docs/Sheets/Drive), โปรแกรมบัญชี/เอกสารราชการ; สำรองไฟด้วย [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]]; พิมพ์/สแกนผ่าน [[entities/brother-dcp-t430w-printer|Brother DCP-T430W]] ด้วย AirPrint (ไม่ลง driver ของผู้ผลิต)
 - **ตั้งอยู่ที่ไหน:** โต๊ะทำงาน office "ห้องสติ"
+
+## การเชื่อมต่อเครือข่าย (ตรวจ 2026-10-08)
+เครื่องต่อ **2 วงเครือข่ายพร้อมกัน**:
+
+| ช่อง | วงเครือข่าย | IP | ต่อผ่าน |
+|---|---|---|---|
+| en0 (สาย LAN) — ช่องหลัก | วง A · LAN หลัก `192.168.200.0/24` | `192.168.200.177` | สวิตช์ **TP-Link TL-SG1024D** (24 พอร์ต gigabit แบบ unmanaged ไม่มี IP) ในตู้ rack → เราเตอร์ **AIS Fibre** (ตัวเครื่อง Huawei) `192.168.200.75` |
+| en1 (Wi-Fi) | วง B · Wi-Fi ของ Deco `192.168.68.0/24` | `192.168.68.109` | TP-Link Deco mesh ที่ตั้งเป็นโหมด Router ซ้อนอยู่หลังวง A (Double NAT) |
+
+- พิมพ์/สแกนกับ [[entities/brother-dcp-t430w-printer|Brother DCP-T430W]] ได้เพราะเครื่องพิมพ์อยู่วง B และ Mac mini ต่อ Wi-Fi วงนั้นอยู่ — **ถ้าปิด Wi-Fi จะใช้เครื่องพิมพ์นี้ไม่ได้**
+- ในตู้ rack เดียวกันมีเครื่องบันทึกกล้องวงจรปิด (DVR) ต่อ LAN อยู่ด้วย
+- แผนผังเต็ม + รายชื่ออุปกรณ์/IP + ผลตรวจความปลอดภัย: `PARA/02_Areas/ศูนย์ปฏิบัติธรรมพัทลุง/IT-Network/`
 
 ## ปัญหา/ข้อจำกัดที่เจอ
 - **2026-09-17 — Microsoft Defender ทำเครื่องช้า:** หลังติดตั้ง Microsoft Defender (พบว่าลงเมื่อ 2026-09-15) ตรวจพบว่า `wdavdaemon_unprivileged` (real-time protection) กิน CPU 20–112% ต่อเนื่อง และ RAM ว่างลดจาก 87% เหลือ ~245 MB จาก 24 GB — สาเหตุหลักของอาการเครื่องช้าที่รู้สึกได้ **แก้แล้ว: ถอดถอน Defender ออกทั้งหมด** (ดูหัวข้อ "ถอดถอน Microsoft Defender" ด้านล่าง)
@@ -88,6 +100,25 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 **ทางเลือกสำรอง (ไม่ต้องเปิด OBS):**
 - งานสั้นที่ไม่ต้องใช้เสียงระบบ → `⌘ + Shift + 5` → Options → Microphone: BOYA CM40
 - รีบมากและไม่เน้นคุณภาพ → Zoom (New Meeting คนเดียว → Share Screen → ติ๊ก **Share Sound** → Record)
+
+### ปุ่มลัดสลับจอ BenQ ไป PC — m1ddc + skhd (2026-10-09) ✅ ทดสอบผ่าน
+
+จอ [[entities/benq-rd280u-monitor|BenQ RD280U]] ใช้ร่วม 2 เครื่อง: Mac mini ต่อ **USB-C** · [[entities/pc-ptmc072-desktop|PC-PTMC072]] ต่อ **HDMI**
+
+| ส่วน | ค่าที่ตั้ง |
+|---|---|
+| ปุ่มลัด | **Cmd + Option + 1** → สลับจอไป HDMI (PC) |
+| เครื่องมือสั่งจอ | `m1ddc` (`brew install m1ddc`) สั่งผ่าน DDC ทางสาย USB-C |
+| สคริปต์ | `~/bin/benq-input.sh hdmi\|usbc\|dp` (รหัส HDMI 1 = 17, USB-C = 27, DP = 15) — หาเลขจอจากชื่อรุ่น ไม่พังถ้าลำดับจอเปลี่ยน |
+| ตัวรับปุ่มลัด | `skhd` (`brew install koekeishiya/formulae/skhd`) config `~/.config/skhd/skhdrc` รันเป็น service เปิดเองตอน login |
+| สิทธิ์ | System Settings → Privacy & Security → **Accessibility** → เพิ่ม `/opt/homebrew/Cellar/skhd/0.3.9/bin/skhd` |
+
+**ข้อควรรู้:**
+- **สลับกลับมา Mac ต้องทำจากฝั่ง PC หรือปุ่มบนจอ** (Input → USB-C) เพราะเมื่อจออยู่ช่อง HDMI แล้ว Mac สั่งผ่าน DDC ไม่ได้
+- `m1ddc` **อ่านค่าช่องปัจจุบันไม่ได้** (ค่า `get input` ที่ได้มั่ว 0/17/19) — ใช้สั่ง `set` อย่างเดียว
+- ไม่ต้องใช้ Display Pilot 2 หรือ BetterDisplay สำหรับงานนี้
+- ถ้าอัปเกรด skhd ผ่าน `brew upgrade` path ใน Cellar จะเปลี่ยน → ต้องให้สิทธิ์ Accessibility ใหม่ แล้วรัน `skhd --restart-service`
+- เพิ่มปุ่มอื่นได้ที่ `skhdrc` เช่น `cmd + alt - 2 : ~/bin/benq-input.sh usbc` (ใช้ได้เฉพาะตอนจอยังแสดง Mac อยู่)
 
 ## ผลตรวจสมรรถภาพ (2026-09-04)
 
@@ -184,4 +215,5 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - [[entities/zircon-pi-ups-1000va]]
 - [[entities/brother-dcp-t430w-printer]]
 - [[entities/claude]]
+- [[entities/pc-ptmc072-desktop]]
 - [[entities/microsoft-365-family]]

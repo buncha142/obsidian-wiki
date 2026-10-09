@@ -3,7 +3,7 @@ title: "BenQ RD280U"
 tags: [it-equipment, hardware]
 category: entities
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-10-09
 sources: [lazada-order-964921309086598]
 summary: "จอมอนิเตอร์ IPS 28.2 นิ้ว 4K+ (3840x2560, 3:2) ออกแบบเฉพาะสำหรับงานเขียนโปรแกรม รองรับ USB-C 90W, KVM, และ Coding Mode — ใช้คู่กับ Mac mini M4 ที่โต๊ะทำงาน office ห้องสติ"
 ---
@@ -50,8 +50,9 @@ summary: "จอมอนิเตอร์ IPS 28.2 นิ้ว 4K+ (3840x2560
 
 ## การใช้งานจริง
 - **ใช้ทำอะไรเป็นหลัก:** เขียนโค้ดด้วย VS Code + [[entities/claude|Claude]] Code, ทำงานเอกสารผ่าน Google Workspace (Docs/Sheets/Drive), ใช้งานโปรแกรมบัญชี/เอกสารราชการ
-- **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** [[entities/macmini-m4-2024|Mac mini M4]] (เชื่อมต่อผ่าน USB-C/DisplayPort), VS Code, Claude Code, Google Workspace; ใช้คู่กับ [[entities/benq-screenbar-light|BenQ ScreenBar]] ที่ซื้อพร้อมกัน; สำรองไฟด้วย [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]]
+- **ใช้คู่กับอุปกรณ์/ซอฟต์แวร์อะไร:** [[entities/macmini-m4-2024|Mac mini M4]] (ต่อทาง **USB-C**) และ [[entities/pc-ptmc072-desktop|PC-PTMC072]] (ต่อทาง **HDMI** ได้ 3840×2560 @ 50 Hz), VS Code, Claude Code, Google Workspace; ใช้คู่กับ [[entities/benq-screenbar-light|BenQ ScreenBar]] ที่ซื้อพร้อมกัน; สำรองไฟด้วย [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]]
 - **ตั้งอยู่ที่ไหน:** โต๊ะทำงาน office "ห้องสติ"
+- **สลับเครื่อง (2026-10-09):** บน Mac กด **Cmd + Option + 1** → ไป HDMI (PC) ผ่าน `m1ddc` + `skhd` (ดูรายละเอียดที่ [[entities/macmini-m4-2024|Mac mini M4]]) · กลับมา Mac ใช้ปุ่มบนจอ Input → USB-C · รหัส DDC: HDMI 17, USB-C 27, DP 15
 
 ## ปัญหา/ข้อจำกัดที่เจอ
 - Refresh rate เพียง 60Hz (รุ่น RD280UG มี 120Hz)
@@ -65,6 +66,7 @@ summary: "จอมอนิเตอร์ IPS 28.2 นิ้ว 4K+ (3840x2560
 - [[entities/macmini-m4-2024]]
 - [[entities/benq-screenbar-light]]
 - [[entities/zircon-pi-ups-1000va]]
+- [[entities/pc-ptmc072-desktop]]
 
 ---
 **แหล่งข้อมูล:**
