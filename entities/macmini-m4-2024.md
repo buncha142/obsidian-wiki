@@ -5,7 +5,7 @@ category: entities
 created: 2026-06-19
 updated: 2026-10-09
 sources: [user-provided]
-summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง การตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio และปุ่มลัด Cmd+Option+1 สลับจอ BenQ ไป HDMI (PC-PTMC072) ด้วย m1ddc + skhd"
+summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เครื่องหลักที่โต๊ะทำงาน office ห้องสติ ต่อจอคู่ BenQ RD280U + LG Full HD; มีบันทึกรายการเปิดอัตโนมัติ (Login Items/LaunchAgents/LaunchDaemons) ผลตรวจสมรรถภาพเครื่อง การตั้งค่าอัดหน้าจอพร้อมเสียงด้วย OBS Studio และปุ่มลัด Cmd+Option+1 สลับจอ BenQ ไป HDMI (PC-PTMC072) ด้วย m1ddc + skhd; Stream Dock AJAZZ เปิดเองตอน login แบบซ่อนหน้าต่าง (--RunInBackground)"
 ---
 
 # Mac mini M4 (2024)
@@ -59,7 +59,7 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 ### รายการที่ยังเปิดอัตโนมัติอยู่ (ตรวจล่าสุด 2026-09-15)
 | ระดับ | รายการ |
 |---|---|
-| Login Items | Google Drive, **Herd** |
+| Login Items | Google Drive, **Herd** (+ Stream Dock AJAZZ ผ่าน LaunchAgent `local.streamdock-hidden` ตั้งแต่ 2026-10-09) |
 | User LaunchAgents | Google Updater (keystone ×3), MySQL, PostgreSQL@16 (Homebrew) |
 | System LaunchAgents | Google keystone, Logitech Options+/RightSight, OneDrive updater, Microsoft AutoUpdate/SyncReporter, Zoom updater |
 | System LaunchDaemons | Docker (socket/vmnetd), Google Updater, Logitech updater, OneDrive/Microsoft/Office helpers, **Laravel Herd helper**, **NetBird VPN**, Zoom daemon |
@@ -70,6 +70,14 @@ summary: "Mac mini รุ่น 2024 ชิป Apple M4 RAM 24GB SSD 500GB เ�
 - ลบออกจาก Login Items ผ่าน System Events: **Microsoft 365 Copilot**, **GeminiAppLauncher**, **FigmaAgent**, **Stream Dock AJAZZ** — ต้องเปิดเองเมื่อจะใช้งาน (Stream Dock ต้องเปิดแอปก่อน ปุ่มถึงจะทำงาน)
 - เก็บไว้: **Google Drive** (ใช้ sync เอกสาร) และ **Herd** (ใช้ dev Laravel)
 - ถ้าแอปใดกลับมาเปิดอัตโนมัติอีก ให้ปิดตัวเลือก "Launch at login" ในหน้าตั้งค่าของแอปนั้น
+
+### เปิด Stream Dock AJAZZ ตอนเปิดเครื่องแบบซ่อนหน้าต่าง (2026-10-09) ✅ ทดสอบผ่าน
+- **กลับมาเปิดอัตโนมัติ** (กลับคำตัดสินเมื่อ 2026-09-15) เพื่อให้ปุ่ม Stream Dock ใช้ได้ทันทีหลัง login แต่ **ไม่แสดงหน้าต่างหลัก** แอปจะอยู่แค่ไอคอนบน menu bar
+- **วิธีทำ:** LaunchAgent `~/Library/LaunchAgents/local.streamdock-hidden.plist` (RunAtLoad) สั่ง `open -g -a "Stream Dock AJAZZ" --args --RunInBackground`
+- **`--RunInBackground`** คือ argument ในตัวแอป (ตัวเดียวกับที่ตัวเลือก Power on ของแอปใช้) เปิดแล้วไม่มีหน้าต่างโผล่เลย ส่วน `open -j` หรือสั่ง hide ทีหลังใช้ไม่ได้ผล เพราะเป็นแอป menu bar (LSUIElement) หน้าต่างโผล่ค้างหรือแวบขึ้นมา
+- เปิดหน้าต่างเมื่อต้องการ: คลิกไอคอน Stream Dock บน menu bar
+- ยกเลิก: `launchctl bootout gui/$(id -u)/local.streamdock-hidden` แล้วลบไฟล์ plist
+- ข้อควรรู้: `--args` มีผลเฉพาะตอนแอปยังไม่ได้เปิด ถ้าแอปเปิดอยู่แล้วแล้วไปสั่ง `open -a` ซ้ำ หน้าต่างอาจเด้งขึ้นมา
 
 > หมายเหตุ: MySQL + PostgreSQL@16 รันพื้นหลังตลอด ถ้าไม่ได้ dev ทุกวันสามารถหยุดด้วย `brew services stop mysql` / `brew services stop postgresql@16` แล้วสั่ง start เมื่อต้องใช้
 

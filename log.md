@@ -61,3 +61,4 @@ title: Wiki Log
 - [2026-10-07T11:00:00+07:00] INGEST source="_raw/Claude Code Agent Teams คู่มือฉบับครบถ้วนในปี 2026.md" (web clip, kimi.ai) pages_created=4 pages_updated=2 mode=raw
 - [2026-10-09T00:00:00+07:00] UPDATE page="entities/pc-ptmc072-desktop.md" scope="เพิ่มหัวข้อการ์ดที่ถอดเก็บสำรอง: TP-Link Archer T4E (Wi-Fi AC1200) + PCE3U1C-R31 (USB 3.0 Renesas µPD720201) จากภาพถ่ายผู้ใช้" pages_updated=1
 - [2026-10-09T13:00:00+07:00] UPDATE pages="entities/macmini-m4-2024.md, entities/benq-rd280u-monitor.md" scope="ปุ่มลัด Cmd+Option+1 สลับจอ BenQ RD280U ไป HDMI (PC-PTMC072) ด้วย m1ddc + skhd — ทดสอบผ่าน" pages_updated=2
+- [2026-10-09T15:00:00+07:00] UPDATE page="entities/macmini-m4-2024.md" scope="Stream Dock AJAZZ เปิดเองตอน login แบบซ่อนหน้าต่าง — LaunchAgent local.streamdock-hidden + --RunInBackground ทดสอบผ่าน" pages_updated=1
