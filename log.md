@@ -62,3 +62,6 @@ title: Wiki Log
 - [2026-10-09T00:00:00+07:00] UPDATE page="entities/pc-ptmc072-desktop.md" scope="เพิ่มหัวข้อการ์ดที่ถอดเก็บสำรอง: TP-Link Archer T4E (Wi-Fi AC1200) + PCE3U1C-R31 (USB 3.0 Renesas µPD720201) จากภาพถ่ายผู้ใช้" pages_updated=1
 - [2026-10-09T13:00:00+07:00] UPDATE pages="entities/macmini-m4-2024.md, entities/benq-rd280u-monitor.md" scope="ปุ่มลัด Cmd+Option+1 สลับจอ BenQ RD280U ไป HDMI (PC-PTMC072) ด้วย m1ddc + skhd — ทดสอบผ่าน" pages_updated=2
 - [2026-10-09T15:00:00+07:00] UPDATE page="entities/macmini-m4-2024.md" scope="Stream Dock AJAZZ เปิดเองตอน login แบบซ่อนหน้าต่าง — LaunchAgent local.streamdock-hidden + --RunInBackground ทดสอบผ่าน" pages_updated=1
+- [2026-10-11T00:00:00+07:00] CREATE page="entities/dell-optiplex-3010-desktop.md" source="ภาพถ่ายผู้ใช้ 4 ภาพ (หน้าเครื่อง, ป้าย Service Tag, ภายใน, ป้าย PSU)" scope="Dell OptiPlex 3010 DT Core i3, HDD Seagate 500GB, PSU H250AD-01 250W"; updated index.md pages_created=1 pages_updated=1
+- [2026-10-11T00:10:00+07:00] UPDATE page="entities/dell-optiplex-3010-desktop.md" scope="ที่ตั้ง/ผู้ใช้ยังไม่กำหนด + แผนอัปเกรด SSD SATA / RAM DDR3 1600" pages_updated=1
+- [2026-10-11T00:20:00+07:00] UPDATE page="entities/dell-optiplex-3010-desktop.md" scope="กำหนดบทบาท: เครื่องควบคุมเสียงตามสายศูนย์ฯ ผ่าน Remote + แนวทางระบบ (ร่าง)" pages_updated=1

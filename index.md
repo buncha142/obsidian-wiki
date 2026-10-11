@@ -31,6 +31,7 @@ title: Wiki Index
 - [[entities/kimi-agent-swarm|Kimi Agent Swarm]] — multi-agent no-code ของ Kimi, sub-agents สูงสุด 300 ตัว (ตัวเลขจากการตลาด)
 - [[entities/macmini-m4-2024|Mac mini M4 (2024)]] — เครื่องหลักที่โต๊ะทำงานห้องสติ ต่อจอคู่ BenQ + LG
 - [[entities/pc-ptmc072-desktop|PC-PTMC072]] — Desktop ASUS Z97-K + i7-4790 Windows 11 ตั้งใช้งานที่ห้องสติ มีบันทึกแก้ปัญหาบูต/สุขภาพ NV2
+- [[entities/dell-optiplex-3010-desktop|Dell OptiPlex 3010]] — Desktop Core i3 ผลิต 2012 HDD 500 GB PSU 250 W Service Tag 8N55G2S
 - [[entities/benq-rd280u-monitor|BenQ RD280U]] — จอ Programming Monitor 28.2" 4K+ 3:2
 - [[entities/benq-screenbar-light|BenQ ScreenBar]] — โคมไฟ LED แขวนหน้าจอ ปรับแสง/อุณหภูมิสีอัตโนมัติ
 - [[entities/zircon-pi-ups-1000va|ZIRCON Pi UPS 1000VA]] — เครื่องสำรองไฟสำหรับ Mac mini + จอ
